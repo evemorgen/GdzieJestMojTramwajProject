@@ -1,5 +1,21 @@
-#navright{
+#myNavbar {
+
     float: right;
-    margin-right: 50px;
+    padding-right: 50 px;
+}
+
+.navbar {
     border: none;
+    background: white;
+    border-bottom: 5px solid grey;
+}
+
+.navbar .navbar-nav > li > a { 
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #b5b9c3 
+}
+.navbar .navbar-nav > li > a:hover { 
+    background-color: #fff; 
+    color: #009ee2 
 }
