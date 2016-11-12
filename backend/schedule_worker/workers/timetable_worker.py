@@ -3,11 +3,12 @@ import logging
 import urllib
 import json
 import datetime
-import sqlite3
+import functools
 
 from tornado.gen import coroutine
 from tornado.httpclient import AsyncHTTPClient
 from lib.tornado_yieldperiodic.yieldperiodic import YieldPeriodicCallback
+from db import MpkDb, PrzystankiDb
 
 
 class TimetableWorker(YieldPeriodicCallback):
@@ -16,7 +17,10 @@ class TimetableWorker(YieldPeriodicCallback):
         self.number = 1
         self.last_db_update = None
         self.db_file = os.environ['TRAM_ROOT'] + '/data/'
+        self.db = MpkDb()
+        self.przystanki_db = PrzystankiDb()
         self.mpk_link = 'http://m.rozklady.mpk.krakow.pl/Services/data.asmx/GetDatabase'
+        self.mpk_point_data = 'http://m.rozklady.mpk.krakow.pl/Services/data.asmx/GetPointData'
         self.force_update = False
         self.headers = {
             'Content-Type': 'application/json',
@@ -28,13 +32,6 @@ class TimetableWorker(YieldPeriodicCallback):
         self.httpclient = AsyncHTTPClient()
         YieldPeriodicCallback.__init__(self, self.run, 60000, faststart=True)
         self.status = [('not running', str(datetime.datetime.now()))]
-
-        db_connection = sqlite3.connect(self.db_file + 'baza.ready.zip')
-        self.cursor = db_connection.cursor()
-        self.cursor.execute('select name from lines;')
-        result = self.cursor.fetchall()
-        db_connection.commit()
-        logging.info(result)
 
     def update_status(self, message):
         self.status.insert(0, (message, str(datetime.datetime.now())))
@@ -64,7 +61,38 @@ class TimetableWorker(YieldPeriodicCallback):
             logging.info("5 minutes didnt pass")
 
     @coroutine
+    def push_to_przystanki(self, body, res):
+        data = json.loads(res.body.decode('utf-8'))['d']
+        print(data)
+        to_push = {
+            'pointId': body['pointId'],
+            'pointName': data['StopName'],
+            'variantId': body['variantId'],
+            'lineName': data['LineName'],
+            'pointTime': json.dumps(data['PointTime']),
+            'ttl': 7
+        }
+        self.przystanki_db.insert(to_push)
+
+    @coroutine
+    def fill_przystanki_db(self, lines):
+        for line in lines:
+            logging.info('fetching line %s', line)
+            line_points = self.db.get_line_points(line)
+            print(line_points)
+            for variant, points in line_points.items():
+                for point in points:
+                    body = {
+                        "variantId": variant,
+                        "pointId": point,
+                        "lineName": line
+                    }
+                    cb = functools.partial(self.push_to_przystanki, body)
+                    yield self.httpclient.fetch(self.mpk_point_data, cb, method='POST', body=json.dumps(body), headers=self.headers)
+
+    @coroutine
     def run(self):
+        yield self.fill_przystanki_db([62, 64])
         logging.info("running for %d time" % self.number)
         self.update_status('fetching info about db version')
         yield self.httpclient.fetch(self.mpk_link, self.get_new_db, method='POST', body=urllib.parse.urlencode({}), headers=self.headers)
