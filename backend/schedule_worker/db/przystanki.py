@@ -13,7 +13,7 @@ class PrzystankiDb():
 
     def get_point_time(self, variantId, lineName, pointId):
         query = """
-            select pointName, pointTime, ttl from przystanki where variantId = '%s' and lineName = '%s' and pointId = '%s';
+            select pointName, pointTime, route from przystanki where variantId = '%s' and lineName = '%s' and pointId = '%s';
         """ % (variantId, lineName, pointId)
         self.cursor.execute(query)
         data = self.cursor.fetchall()
@@ -21,13 +21,18 @@ class PrzystankiDb():
         to_return = {
             'pointName': data[0][0],
             'pointTime': json.loads(data[0][1]),
-            'ttl': data[0][2]
+            'route': data[0][2]
         }
         return to_return
 
     def insert(self, stuff):
         query = """
-            insert into przystanki values (%s, %s, '%s', '%s', '%s', %s);
-        """ % (stuff['pointId'], stuff['variantId'], stuff['lineName'], stuff['pointTime'], stuff['pointName'], stuff['ttl'])
+            insert into przystanki values (%s, %s, '%s', '%s', '%s', '%s');
+        """ % (stuff['pointId'], stuff['variantId'], stuff['lineName'], stuff['pointTime'], stuff['pointName'], stuff['route'])
+        self.cursor.execute(query)
+        self.db_connection.commit()
+
+    def clear_table(self):
+        query = "delete from przystanki"
         self.cursor.execute(query)
         self.db_connection.commit()

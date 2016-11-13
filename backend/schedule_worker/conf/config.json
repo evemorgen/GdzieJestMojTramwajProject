@@ -1,0 +1,13 @@
+{
+    "lines": [ 62, 64 ],
+    "get_point_data_link": "http://m.rozklady.mpk.krakow.pl/Services/data.asmx/GetPointData",
+    "get_db_link": "http://m.rozklady.mpk.krakow.pl/Services/data.asmx/GetDatabase",
+    "ttworker_refresh_period": 1440,
+    "mpk_headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Content-Length": 0,
+        "Host": "m.rozklady.mpk.krakow.pl",
+        "Connection": "close"
+    }
+}

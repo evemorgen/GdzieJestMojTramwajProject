@@ -5,9 +5,8 @@ import logging
 from tornado.web import Application
 from tornado.ioloop import IOLoop
 
-from utils.config import Config
-from utils.logging_conf import logging_config
-from workers.timetable_worker import TimetableWorker
+from utils import Config, logging_config
+from workers import TimetableWorker
 from handlers import HealthCheck, TTworker
 
 
@@ -20,7 +19,9 @@ def make_app():
 if __name__ == "__main__":
     os.environ['TRAM_ROOT'] = os.getcwd()
     logging_config()
+    logging.info("starting app")
     tt_worker = TimetableWorker()
+    config = Config()
     app = make_app()
     app.listen(sys.argv[1])
     IOLoop.current().start()
