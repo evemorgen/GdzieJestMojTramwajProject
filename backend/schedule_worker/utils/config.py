@@ -1,7 +1,6 @@
 import logging
 import os
 import json
-import pprint
 
 from utils import Singleton
 
