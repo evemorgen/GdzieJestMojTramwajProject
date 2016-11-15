@@ -1,5 +1,4 @@
 #myNavbar {
-
     float: right;
     padding-right: 50 px;
 }
@@ -15,6 +14,7 @@
     font-weight: 700; 
     color: #b5b9c3 
 }
+
 .navbar .navbar-nav > li > a:hover { 
     background-color: #fff; 
     color: #009ee2 
