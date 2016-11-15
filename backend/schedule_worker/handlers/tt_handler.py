@@ -11,7 +11,6 @@ class TTworker(RequestHandler):
     @coroutine
     def post(self, method):
         params = json.loads(self.request.body.decode('utf-8'))
-        print(params)
         if method == 'force_update':
             self.timetable_worker.force_update = True
             yield self.timetable_worker.run()
