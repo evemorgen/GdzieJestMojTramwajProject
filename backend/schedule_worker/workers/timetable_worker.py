@@ -4,6 +4,7 @@ import urllib
 import json
 import datetime
 import functools
+import time
 
 from tornado.gen import coroutine
 from tornado.httpclient import AsyncHTTPClient
@@ -62,6 +63,7 @@ class TimetableWorker(YieldPeriodicCallback):
 
     @coroutine
     def push_to_przystanki(self, body, res):
+        print(res)
         data = json.loads(res.body.decode('utf-8'))['d']
         to_push = {
             'pointId': body['pointId'],
@@ -90,6 +92,10 @@ class TimetableWorker(YieldPeriodicCallback):
                     }
                     cb = functools.partial(self.push_to_przystanki, body)
                     yield self.httpclient.fetch(self.mpk_point_data, cb, method='POST', body=json.dumps(body), headers=self.headers)
+
+    @coroutine
+    def get_line_position(self, line, time=time.strftime('%-H:%M')):
+        pass
 
     @coroutine
     def run(self):
