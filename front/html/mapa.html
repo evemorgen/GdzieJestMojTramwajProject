@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="project">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script src="../app/app.js"></script>
 
     <title>Ile mam jeszcze czekac</title>
   </head>
@@ -42,8 +43,11 @@
               </div>
           </nav>
           
-          <div class="container">
-              <h3>HERE MAPA</h3>    
+          <div class="container" ng-controller="check">
+              <h3>HERE MAPA</h3>   
+              
+              {{test.status}};
+              {{test.number}};
           </div>
           
           <footer>
