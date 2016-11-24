@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" ng-app="project">
+<html  lang="pl" ng-app="projectMiss" >
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +17,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
       
     <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <script src="../app/app.js"></script>
+    <script type="text/javascript" src="../app/app.js"></script>
+    <script type="text/javascript" src="../app/controllers/check.js"></script>
 
     <title>Ile mam jeszcze czekac</title>
   </head>
     
-  <body>
+  <body >
       <div class="container">
           <nav class="navbar navbar-default">
               <div class="container">
@@ -45,11 +46,24 @@
               </div>
           </nav>
           
-          <div class="container" ng-controller="check">
+          <div class="container" ng-controller = "check">
               <h3>HERE MAPA</h3>   
               
-              {{test.status}};
-              {{test.number}};
+              
+              {{test.status}}
+              {{test.number}}
+              
+              
+              <div >
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+                  
+                  
+                  
+</div>
+
+              
+
           </div>
           
           <footer>
