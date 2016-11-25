@@ -5,6 +5,12 @@ from tornado.gen import coroutine
 
 
 class TTworker(RequestHandler):
+
+    def set_default_headers(self):
+        self.set_header("Access-Control-Allow-Origin", "*")
+        self.set_header("Access-Control-Allow-Headers", "Content-Type")
+        self.set_header('Access-Control-Allow-Methods', 'POST, OPTIONS')
+
     def initialize(self, tt_worker):
         self.timetable_worker = tt_worker
 
@@ -21,3 +27,8 @@ class TTworker(RequestHandler):
             else:
                 ret = self.timetable_worker.get_status()
             self.write({'status': ret})
+
+    @coroutine
+    def options(self, method):
+        self.set_status(204)
+        self.finish()
