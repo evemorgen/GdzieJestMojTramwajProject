@@ -1,4 +1,1 @@
-function(){
-    var app = angular.module('projectMiss', ['checkCtrl']);
-    
-};
+var app = angular.module('projectMiss', ['checkCtrl']);

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -15,14 +15,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Angular1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-      
+
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script type="text/javascript" src="../app/app.js"></script>
     <script type="text/javascript" src="../app/controllers/check.js"></script>
 
     <title>Ile mam jeszcze czekac</title>
   </head>
-    
+
   <body >
       <div class="container">
           <nav class="navbar navbar-default">
@@ -45,29 +45,35 @@
                 </div>
               </div>
           </nav>
-          
-          <div class="container" ng-controller = "check">
-              <h3>HERE MAPA</h3>   
-              
-              
+
+          <div class="container" ng-controller="check">
+              <h3>HERE HEALTHCHECK</h3>
+              <button ng-click="healthcheck()">Check backend</button>
               {{test.status}}
               {{test.number}}
-              
-              
-              <div >
-  <p>Name : <input type="text" ng-model="name"></p>
-  <h1>Hello {{name}}</h1>
-                  
-                  
-                  
+              <br>
+              <input type="text" ng-model="logsAmount" />
+              <button ng-click="getstatus(logsAmount)">Get status</button>
+              <br>
+              <table>
+                  <tr>
+                    <th>Time</th>
+                    <th>Log</th>
+                  </tr>
+                  <tr ng-repeat="log in logs">
+                      <td>{{ log[0] }}</td>
+                      <td>{{ log[1] }}</td>
+                  </tr>
+              </table>
+          </div>
 </div>
 
-              
+
 
           </div>
-          
+
           <footer>
-              
+
           </footer>
       </div>
   </body>
