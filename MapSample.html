@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Move Marker</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <input onclick="moveMarker();" type=button value="Next position">     
+    </div>
+    <div id="map"></div>
+    <script>
+
+      var map;
+	  markers = [];
+	  var positions = [
+			{lat: 50.03, lng: 19.57},
+			{lat: 50.032, lng: 19.576},
+			{lat: 50.43, lng: 19.97},
+			{lat: 56.47, lng: 19.87},
+			{lat: 50.44, lng: 19.97}
+		];               	// tablica z pozycjami
+	  var pos = 0;	
+		
+      function initMap() {
+        var centerMap = {lat: 50.03, lng: 19.57};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: centerMap,
+          mapTypeId: 'terrain'
+        });
+        moveMarker();
+      }
+
+     
+      function moveMarker() {
+		deleteMarkers()
+	  	var marker = new google.maps.Marker({
+          position: positions[pos],
+          map: map
+        });
+		markers.push(marker);
+		pos++	  
+		pos = pos%positions.length
+      }  
+	  
+	  function deleteMarkers() {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+	  
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXG_f0jhDrRp2Y0o5AUvTnlaaaW_7apI&callback=initMap">
+    </script>
+  </body>
+</html>
+
+
+       
