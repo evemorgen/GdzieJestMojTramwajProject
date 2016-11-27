@@ -4,30 +4,34 @@ app.config(['$httpProvider', function($httpProvider) {
             delete $httpProvider.defaults.headers.common['X-Requested-With'];
             }
 ]);
-app.controller('check', function($scope, $http){
-    $scope.test = {};
-    $scope.test.status = 'None';
-    $scope.test.number = 'None';
+
+app.run(function($http, $rootScope) {
+    $http.get('../app/config.json').then(function(response) {
+        $rootScope.config = response.data;
+        console.log($rootScope.config);
+    });
+});
+
+app.controller('backendTests', function($scope, $rootScope, $http){
+    $scope.healthcheckResult = {};
+    $scope.healthcheckResult.status = 'None';
+    $scope.healthcheckResult.number = 'None';
 
     $scope.healthcheck = function() {
-        console.log('healthcheck');
         $http({
-            url: 'http://192.168.1.123:8888/healthcheck',
+            url: $rootScope.config.url + '/healthcheck',
             method: 'post',
             }).then(function(response){
-            console.log(response);
-            $scope.test = response.data;
+                $scope.healthcheckResult = response.data;
         });
     };
+
     $scope.getstatus = function(logsAmount) {
-        console.log('status');
         $http.post(
-            'http://192.168.1.123:8888/mpk_db/get_status',
+            $rootScope.config.url + '/mpk_db/get_status',
             {number: parseInt(logsAmount)}
         ).then(function(res){
             $scope.logs = res.data.status;
         });
     };
 });
-
-

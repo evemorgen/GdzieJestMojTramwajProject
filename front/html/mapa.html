@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html  lang="pl" ng-app="projectMiss" >
-  <head>
+<html lang="pl" ng-app="projectMiss">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,28 +14,29 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Angular1 -->
+
+    <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script type="text/javascript" src="../app/app.js"></script>
     <script type="text/javascript" src="../app/controllers/check.js"></script>
 
-    <title>Ile mam jeszcze czekac</title>
-  </head>
+    <title>GdzieJestMojTramwajProject</title>
+</head>
 
-  <body >
-      <div class="container">
-          <nav class="navbar navbar-default">
-              <div class="container">
-                  <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
-                      </button>
-                      <a class="navbar-brand" href="#">CZEKAM</a>
-                  </div>
+                    </button>
+                    <a class="navbar-brand" href="#">GdzieJestMojTramwajProject</a>
+                </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
@@ -43,38 +45,31 @@
                         <li><a href="contact.html">Kontakt</a></li>
                     </ul>
                 </div>
-              </div>
-          </nav>
+            </div>
+        </nav>
+        <div class="container" ng-controller="backendTests">
+            <div>
+                <h3>Healthcheck</h3>
+                <button ng-click="healthcheck()">Check backend response</button>                {{healthcheckResult.status}} {{healthcheckResult.number}}
+            </div>
+            <div>
+                <input type="text" ng-model="logsAmount" />
+                <button ng-click="getstatus(logsAmount)">Get status</button>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Log</th>
+                    </tr>
+                    <tr ng-repeat="log in logs">
+                        <td>{{ log[0] }}</td>
+                        <td>{{ log[1] }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
 
-          <div class="container" ng-controller="check">
-              <h3>HERE HEALTHCHECK</h3>
-              <button ng-click="healthcheck()">Check backend</button>
-              {{test.status}}
-              {{test.number}}
-              <br>
-              <input type="text" ng-model="logsAmount" />
-              <button ng-click="getstatus(logsAmount)">Get status</button>
-              <br>
-              <table>
-                  <tr>
-                    <th>Time</th>
-                    <th>Log</th>
-                  </tr>
-                  <tr ng-repeat="log in logs">
-                      <td>{{ log[0] }}</td>
-                      <td>{{ log[1] }}</td>
-                  </tr>
-              </table>
-          </div>
-</div>
-
-
-
-          </div>
-
-          <footer>
-
-          </footer>
-      </div>
-  </body>
 </html>
