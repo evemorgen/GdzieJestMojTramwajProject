@@ -126,7 +126,7 @@
                 var icons = tramLine.get('icons');
                 icons[0].offset = (count / 2) + '%';
                 tramLine.set('icons', icons);
-            }, 800);
+            }, 1000);
         }
 		
 		function initMap() {
@@ -154,12 +154,12 @@
 				strokeWeight: 2,
                 icons: [{
                     icon: tramSymbol,
+                    fixedRotation: true,
                     offset: '0%'
                 }],
                 map: map
 			});
 
-            //tramLine18Path.setMap(map);
             animateTram(tramLine18Path);
 		}
 
