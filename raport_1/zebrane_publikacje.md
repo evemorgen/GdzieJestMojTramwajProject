@@ -24,8 +24,8 @@
   <tr>
     <td class="tg-yw4l">2</td>
     <td class="tg-031e">szacowanie opóźnień busow przystanki</td>
-    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">@PG</td>
+    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-36408a18-a18d-4ef7-a430-984ad88c88d0/c/horbachov_naumov_kolii_estimation_aot-2015-3-02.pdf</td>
   </tr>
   <tr>
