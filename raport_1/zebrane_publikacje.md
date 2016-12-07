@@ -38,7 +38,7 @@
   <tr>
     <td class="tg-yw4l">4</td>
     <td class="tg-yw4l">opóźnienia ze względu na wsiadających</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@SD</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://onlinepubs.trb.org/Onlinepubs/trr/1983/915/915-002.pdf</td>
   </tr>
@@ -66,14 +66,14 @@
   <tr>
     <td class="tg-yw4l">8</td>
     <td class="tg-yw4l">ANALIZA CZYNNIKÓW WPŁYWAJĄCYCH NA<br>PRĘDKOŚĆ POJAZDÓW TRANSPORTU<br>ZBIOROWEGO NA PRZYKŁADZIE GDAŃSKA</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@SD</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l">https://www.researchgate.net/profile/Kazimierz_Jamroz/publication/259043038_Analiza_czynnikow_wplywajacych_na_predkosc_pojazdow_transportu_zbiorowego_na_przykladzie_Gdanska_Analysis_of_factors_affecting_public_transport_vehicle_speed_on_case_of_Gdansk/links/0c960529cf07e67ccc000000.pdf</td>
   </tr>
   <tr>
     <td class="tg-yw4l">9</td>
     <td class="tg-yw4l">kolejne warunki atmosferyczne</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@SD</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-article-BAT1-0036-0028/c/nr_2_45-53.pdf</td>
   </tr>
