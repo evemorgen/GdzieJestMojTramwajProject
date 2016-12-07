@@ -17,7 +17,7 @@
   <tr>
     <td class="tg-yw4l">1</td>
     <td class="tg-031e">modelowanie wyboru trasy</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-article-BSL3-0026-0080/c/Zochowska.pdf</td>
   </tr>
@@ -25,13 +25,13 @@
     <td class="tg-yw4l">2</td>
     <td class="tg-031e">szacowanie opóźnień busow przystanki</td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-36408a18-a18d-4ef7-a430-984ad88c88d0/c/horbachov_naumov_kolii_estimation_aot-2015-3-02.pdf</td>
   </tr>
   <tr>
     <td class="tg-yw4l">3</td>
     <td class="tg-031e">wpływ korków na opoznienia</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l">https://www.dropbox.com/s/pelrq2wdtqml4ud/P9%20Minor%20Road%20Traffic%20Delays%20at%20Priority%20Junctions%20on%20Low%20Speed%20Roads%20in%20Suburban%20Areas%20%28JT%29.pdf?dl=0</td>
   </tr>
@@ -80,7 +80,7 @@
   <tr>
     <td class="tg-yw4l">10</td>
     <td class="tg-yw4l">łączenie różnych czynników do kupy przy modelowaniu "urban traffic"</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l">potrzebny dostęp</td>
     <td class="tg-yw4l">http://ieeexplore.ieee.org/document/5169913/</td>
   </tr>
