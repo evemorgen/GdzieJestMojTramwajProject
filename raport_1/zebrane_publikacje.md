@@ -54,7 +54,6 @@
     <td class="tg-yw4l">6</td>
     <td class="tg-yw4l">"traffic operations analysis"</td>
     <td class="tg-yw4l">@MH</td>
-    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">książka z 1982 roku, lol</td>
     <td class="tg-yw4l">https://babel.hathitrust.org/cgi/pt?id=mdp.39015040706627;view=1up;seq=1</td>
   </tr>
@@ -62,7 +61,6 @@
     <td class="tg-yw4l">7</td>
     <td class="tg-yw4l">wpływ pogody na ruch w mieście</td>
     <td class="tg-yw4l">@MH</td>
-    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://ops.fhwa.dot.gov/publications/weatherempirical/weatherempirical.pdf</td>
   </tr>
   <tr>
