@@ -46,7 +46,6 @@
     <td class="tg-yw4l">5</td>
     <td class="tg-yw4l">zeszyt naukowy na temat: MODELOWANIE PODRÓŻY<br>I PROGNOZOWANIE RUCHU</td>
     <td class="tg-yw4l">@MH</td>
-    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">dużo treści, trzeba jakoś to okroić</td>
     <td class="tg-yw4l">http://www.sitk.org.pl/wp-content/uploads/2015/07/148.pdf</td>
   </tr>
@@ -61,6 +60,7 @@
     <td class="tg-yw4l">7</td>
     <td class="tg-yw4l">wpływ pogody na ruch w mieście</td>
     <td class="tg-yw4l">@MH</td>
+    <td class="tg-yw4l"></td>
     <td class="tg-yw4l">http://ops.fhwa.dot.gov/publications/weatherempirical/weatherempirical.pdf</td>
   </tr>
   <tr>
