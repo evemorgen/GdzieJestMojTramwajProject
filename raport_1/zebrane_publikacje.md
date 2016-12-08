@@ -12,7 +12,7 @@
     <th class="tg-031e">Opis</th>
     <th >Kto ogarnia?</th>
     <th class="tg-yw4l">uwagi</th>
-	<th class="tg-yw4l">Postep</th>
+    <th class="tg-yw4l">Postep</th>
     <th class="tg-yw4l">Link</th>
   </tr>
   <tr>
@@ -20,7 +20,7 @@
     <td class="tg-031e">modelowanie wyboru trasy</td>
     <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l"></td>
-	<td class="tg-yw4l">done</td>
+    <td class="tg-yw4l">done</td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-article-BSL3-0026-0080/c/Zochowska.pdf</td>
   </tr>
   <tr>
@@ -28,7 +28,7 @@
     <td class="tg-031e">szacowanie opóźnień busow przystanki</td>
     <td class="tg-yw4l">@PG</td>
     <td class="tg-yw4l"></td>
-	<td class="tg-yw4l">not even</td>
+    <td class="tg-yw4l">done</td>
     <td class="tg-yw4l">http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-36408a18-a18d-4ef7-a430-984ad88c88d0/c/horbachov_naumov_kolii_estimation_aot-2015-3-02.pdf</td>
   </tr>
   <tr>
