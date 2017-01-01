@@ -13,7 +13,7 @@ class Przystanek:
 with open('przystanki_0_159.json', 'r') as plik:
     przystanki = json.load(plik)
 
-ogarniete = {klucz: (float(przystanki[klucz]['x'])*(10**6), float(przystanki[klucz]['y'])*(10**6)) for klucz in przystanki}
+ogarniete = {klucz: (float(przystanki[klucz]['y'])*(10**6), float(przystanki[klucz]['x'])*(10**6)) for klucz in przystanki}
 G = nx.Graph()
 #G.add_node('kleparz')
 #G.add_node('dworzec')
@@ -44,11 +44,11 @@ pos = nx.get_node_attributes(G, 'pos')
 
 offset = {}
 for k,v in pos.items():
-     offset[k] = (v[0], v[1]-1000)
+     offset[k] = (v[0], v[1]-500)
 
 plt.figure(3, figsize=(80,80))
 nx.draw(G, pos, font_size=12, node_size=100)
-nx.draw_networkx_labels(G, offset, font_family='ubuntu')
+nx.draw_networkx_labels(G, offset, font_family=('ubuntu','arial'))
 #nx.draw_networkx_edge_labels(G, pos)
 plt.savefig('graph.png', format='png', dpi=75)
 plt.show()
