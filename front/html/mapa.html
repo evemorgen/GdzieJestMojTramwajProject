@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script type="text/javascript" src="../app/app.js"></script>
     <script type="text/javascript" src="../app/controllers/check.js"></script>
+    <script type="text/javascript" src="../app/js/script.js"></script>
 
     <title>GdzieJestMojTramwajProject</title>
 </head>
@@ -47,6 +48,67 @@
                 </div>
             </div>
         </nav>
+        <div class="well" id="temporaryMapPanel">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="btn-group">
+                        <button type="button" id="linia" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Linia: <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" id="kierunek" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kierunek: <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" id="zprzystanek" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Z przystanku: <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" id="doprzystanek" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Do przystanku: <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="HH:MM">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Aktualna godzina</button>
+                    </div>
+                </div>  
+                <div class="col-lg-1">
+                    <div class="btn-group">
+                        <button type="button" id="wyszukaj" class="btn btn-default " >Wyszukaj!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
         <div class="container" ng-controller="backendTests">
             <div>
                 <h3>Healthcheck</h3>
@@ -65,10 +127,6 @@
                         <td>{{ log[1] }}</td>
                     </tr>
                 </table>
-            </div>
-            
-            <div class="well" >
-                
             </div>
         </div>
     </div>
