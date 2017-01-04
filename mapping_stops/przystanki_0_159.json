@@ -87,14 +87,6 @@
         "skrzyzowanie": false,
         "x": "50.069602"
     },
-    "Kopiec Wandy p\u0119tla": {
-        "przystanek": false,
-        "y": " 20.069706",
-        "on_demand": true,
-        "petla": true,
-        "skrzyzowanie": false,
-        "x": "50.068488"
-    },
     "Bie\u017canowska": {
         "przystanek": true,
         "y": " 19.979243",
@@ -131,7 +123,7 @@
         "przystanek": true,
         "y": " 20.066850",
         "on_demand": true,
-        "petla": false,
+        "petla": true,
         "skrzyzowanie": false,
         "x": "50.069825"
     },
@@ -343,22 +335,6 @@
         "skrzyzowanie": false,
         "x": "50.102268"
     },
-    "D\u0105bie p\u0119tla": {
-        "przystanek": false,
-        "y": " 19.980068",
-        "on_demand": false,
-        "petla": true,
-        "skrzyzowanie": false,
-        "x": "50.061635"
-    },
-    "Skrzy\u017cowanie D\u0105bie": {
-        "przystanek": false,
-        "y": "19.979444",
-        "on_demand": false,
-        "petla": false,
-        "skrzyzowanie": true,
-        "x": "50.060877"
-    },
     "Grota-Roweckiego": {
         "przystanek": true,
         "y": " 19.920626",
@@ -439,14 +415,6 @@
         "skrzyzowanie": false,
         "x": "50.040632"
     },
-    "Salwator p\u0119tla": {
-        "przystanek": false,
-        "y": " 19.913769",
-        "on_demand": false,
-        "petla": true,
-        "skrzyzowanie": false,
-        "x": "50.052773"
-    },
     "Wiadukty": {
         "przystanek": true,
         "y": " 20.056936",
@@ -470,14 +438,6 @@
         "petla": false,
         "skrzyzowanie": false,
         "x": "50.045354"
-    },
-    "Skrzy\u017cowanie Bronowice": {
-        "przystanek": false,
-        "y": "19.902125",
-        "on_demand": false,
-        "petla": false,
-        "skrzyzowanie": true,
-        "x": "50.077244"
     },
     "Rondo Grzeg\u00f3rzeckie": {
         "przystanek": true,
@@ -667,7 +627,7 @@
         "przystanek": true,
         "y": " 19.914849",
         "on_demand": false,
-        "petla": false,
+        "petla": true,
         "skrzyzowanie": false,
         "x": "50.052744"
     },
@@ -819,7 +779,7 @@
         "przystanek": true,
         "y": " 19.979332",
         "on_demand": false,
-        "petla": false,
+        "petla": true,
         "skrzyzowanie": false,
         "x": "50.060843"
     },
@@ -982,14 +942,6 @@
         "petla": false,
         "skrzyzowanie": false,
         "x": "50.084080"
-    },
-    "Skrzy\u017cowanie Wanda": {
-        "przystanek": false,
-        "y": "20.068595",
-        "on_demand": false,
-        "petla": false,
-        "skrzyzowanie": true,
-        "x": "50.068129"
     },
     "Krowodrza G\u00f3rka": {
         "przystanek": false,
