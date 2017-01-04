@@ -1,0 +1,1396 @@
+!!python/object:networkx.classes.graph.Graph
+adj: &id177
+  AWF:
+    Muzeum Lotnictwa: &id035
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+    Stella-Sawickiego: &id113
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+  "Agencja Krak\xF3w Wsch\xF3d":
+    Blokowa: &id001
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '22']
+    Walcownia: &id149
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '22']
+  Balicka Wiadukt:
+    "Bronowice Ma\u0142e": &id004
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '24', '64']
+    Wesele: &id153
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '24', '64']
+  Bardosa:
+    Brama nr 4: &id003
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+    Kopiec Wandy: &id021
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12']
+    Suche Stawy: &id120
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10', '12']
+  Batorego:
+    "Plac Inwalid\xF3w": &id053
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+    Teatr Bagatela: &id132
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+  "Bia\u0142ucha":
+    "Cysters\xF3w": &id006
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+    "TAURON Arena Krak\xF3w Wieczysta": &id130
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+  "Bie\u0144czycka":
+    "Rondo Czy\u017Cy\u0144skie": &id070
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5', '9', '14', '52', '64']
+    Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id077
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5', '9', '14', '52', '64']
+  "Bie\u017Canowska":
+    Dauna: &id008
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '24', '50']
+    Kabel: &id017
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '6', '9', '13', '23', '24', '50', '69']
+    Wlotowa: &id160
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+  Biprostal:
+    Uniwersytet Pedagogiczny: &id145
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+    "Urz\u0119dnicza": &id147
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+  Blokowa:
+    "Agencja Krak\xF3w Wsch\xF3d": *id001
+    Mrozowa: &id033
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '22']
+  "Borek Fa\u0142\u0119cki":
+    "Borek Fa\u0142\u0119cki I": &id002
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+  "Borek Fa\u0142\u0119cki I":
+    "Borek Fa\u0142\u0119cki": *id002
+    Solvay: &id106
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+  Borsucza:
+    "Bro\u017Cka": &id005
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '12', '22', '23']
+    "Skrzy\u017Cowanie Grota": &id097
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '12', '22', '23']
+  Brama nr 4:
+    Bardosa: *id003
+    "Je\u017Cynowa": &id014
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+  Brama nr 5:
+    "Je\u017Cynowa": &id015
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+    Meksyk: &id030
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+  "Bratys\u0142awska":
+    "Krowodrza G\xF3rka": &id022
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '5', '18', '50', '69']
+    Szpital Narutowicza: &id122
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '5', '18', '50', '69']
+  Bronowice:
+    "G\u0142owackiego": &id012
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+    Wesele: &id154
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '24', '64']
+  "Bronowice Ma\u0142e":
+    Balicka Wiadukt: *id004
+  "Bro\u017Cka":
+    Borsucza: *id005
+    "\u0141agiewniki": &id169
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '12', '22', '23']
+  Centralna:
+    Rondo 308. Dywizjonu: &id068
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+    "Rondo Czy\u017Cy\u0144skie": &id071
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+  Centrum Kongresowe ICE:
+    Orzeszkowej: &id041
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+    Szwedzka: &id124
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+  Chmieleniec:
+    Czerwone Maki P+R: &id007
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+    Kampus UJ: &id018
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+  "Cichy K\u0105cik":
+    Reymana: &id066
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+  Cienista:
+    Teatr Ludowy: &id135
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5']
+    "Wa\u0144kowicza": &id152
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5']
+  "Cmentarz Podg\xF3rski":
+    Dworcowa: &id009
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '6', '11', '13', '23', '24', '69']
+    "Powsta\u0144c\xF3w Wielkopolskich": &id060
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '6', '11', '13', '23', '24', '69']
+  Cmentarz Rakowicki:
+    Cmentarz Rakowicki:
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '2']
+    Rakowicka: &id065
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2']
+  Cracovia:
+    Oleandry: &id040
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+    "Uniwersytet Jagiello\u0144ski": &id143
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+  "Cysters\xF3w":
+    "Bia\u0142ucha": *id006
+    Rondo Mogilskie: &id080
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+  Czerwone Maki P+R:
+    Chmieleniec: *id007
+  "Czy\u017Cyny":
+    "Rondo Czy\u017Cy\u0144skie": &id072
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+    Stella-Sawickiego: &id114
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+  DH Wanda:
+    Rondo Hipokratesa: &id075
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14', '21', '52', '64']
+    Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id078
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14', '21', '52', '64']
+  Darwina:
+    "Jarz\u0119biny": &id013
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '4', '5']
+    Wiadukty: &id155
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '4', '5']
+  Dauna:
+    "Bie\u017Canowska": *id008
+    Piaski Nowe: &id045
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '24', '50']
+  Dunikowskiego:
+    Kleeberga: &id019
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '52', '64']
+    Rondo Hipokratesa: &id076
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14', '21', '52', '64']
+    Rondo Piastowskie: &id084
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14']
+  Dworcowa:
+    "Cmentarz Podg\xF3rski": *id009
+    "Skrzy\u017Cowanie Dworcowa": &id092
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '6', '11', '13', '23', '24', '69']
+  "Dworzec G\u0142\xF3wny":
+    "Dworzec G\u0142\xF3wny Zach\xF3d": &id010
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '69']
+    Lubicz: &id029
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '4', '7', '10', '14', '20', '52', '62', '64']
+    "Poczta G\u0142\xF3wna": &id058
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '10', '20', '24', '52', '62']
+    Stary Kleparz: &id111
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '4', '7', '14', '24', '64', '69']
+  "Dworzec G\u0142\xF3wny Tunel":
+    Rondo Mogilskie: &id081
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['5', '19', '50']
+    "Skrzy\u017Cowanie Polibuda": &id100
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['5', '19', '50']
+  "Dworzec G\u0142\xF3wny Zach\xF3d":
+    "Dworzec G\u0142\xF3wny": *id010
+    Politechnika: &id059
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '69']
+  "Dworzec P\u0142asz\xF3w Estakada":
+    Lipska: &id027
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '11', '50']
+    "Skrzy\u017Cowanie Dworcowa": &id093
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '11', '50']
+  Dworzec Towarowy:
+    Nowy Kleparz: &id037
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['7', '18']
+    "Skrzy\u017Cowanie Polibuda": &id101
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '5', '19', '50', '69']
+    Szpital Narutowicza: &id123
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '5', '18', '50', '69']
+  "D\u0105bie":
+    "D\u0105bie":
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['7', '7']
+    "Ofiar D\u0105bia": &id038
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '7', '12', '14', '22', '62']
+    Plaza: &id056
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+  "Elektromonta\u017C":
+    Wiadukty: &id156
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4']
+    Zajezdnia Nowa Huta: &id165
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4']
+  Fabryczna:
+    Francesco Nullo: &id011
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '7', '12', '14', '22', '62']
+    "Ofiar D\u0105bia": &id039
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '7', '12', '14', '22', '62']
+  Filharmonia:
+    Jubilat: &id016
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '2', '6']
+    "Plac Wszystkich \u015Awi\u0119tych": &id055
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '6', '8', '13', '18', '20', '69']
+    "Skrzy\u017Cowanie UJ": &id103
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '8', '13', '18', '20', '69']
+  Francesco Nullo:
+    Fabryczna: *id011
+    "Teatr Vari\xE9t\xE9": &id137
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '7', '12', '14', '22', '62']
+  Gromadzka:
+    "Kukli\u0144skiego": &id023
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '20', '50']
+    Lipska: &id028
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '20', '50']
+  Grota-Roweckiego:
+    "Lipi\u0144skiego": &id026
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+    Norymberska: &id036
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+  "G\u0142owackiego":
+    Bronowice: *id012
+    Uniwersytet Pedagogiczny: &id146
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+  Hala Targowa:
+    "Rondo Grzeg\xF3rzeckie": &id074
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '19', '22']
+    "Starowi\u015Blna": &id108
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '19', '22']
+  "Jarz\u0119biny":
+    Darwina: *id013
+    "Wzg\xF3rza Krzes\u0142awickie": &id162
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '4', '5']
+  "Je\u017Cynowa":
+    Brama nr 4: *id014
+    Brama nr 5: *id015
+  Jubilat:
+    Filharmonia: *id016
+    Komorowskiego: &id020
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '2', '6']
+  Kabel:
+    "Bie\u017Canowska": *id017
+    "Skrzy\u017Cowanie Dworcowa": &id094
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '6', '9', '13', '23', '24', '50', '69']
+  Kampus UJ:
+    Chmieleniec: *id018
+    Ruczaj: &id086
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+  Kapelanka:
+    Szwedzka: &id125
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+    "S\u0142omiana": &id126
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+  Klasztorna:
+    Os.Na Skarpie: &id042
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10', '12']
+    Suche Stawy: &id121
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10', '12']
+  Kleeberga:
+    Dunikowskiego: *id019
+    "Piasta Ko\u0142odzieja": &id047
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '52', '64']
+  Klimeckiego:
+    "Kukli\u0144skiego": &id024
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '20', '50']
+    "Zab\u0142ocie": &id163
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '20', '50']
+  "Kobierzy\u0144ska":
+    "Skrzy\u017Cowanie Grota": &id098
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+    "S\u0142omiana": &id127
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+  Koksochemia:
+    Meksyk: &id031
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+    "Plesz\xF3w": &id057
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10']
+  Kombinat:
+    Mrozowa: &id034
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '22']
+    Struga: &id118
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '21', '22']
+    Zajezdnia Nowa Huta: &id166
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4']
+  Komorowskiego:
+    Jubilat: *id020
+    Salwator: &id091
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '2', '6']
+  Kopiec Wandy:
+    Bardosa: *id021
+  Korona:
+    Limanowskiego: &id025
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '11', '13', '23']
+    "Plac Bohater\xF3w Getta": &id049
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['19']
+    Plac Wolnica: &id054
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '8', '10', '13']
+    Smolki: &id104
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '10', '11', '19', '23']
+  "Krowodrza G\xF3rka":
+    "Bratys\u0142awska": *id022
+  "Kukli\u0144skiego":
+    Gromadzka: *id023
+    Klimeckiego: *id024
+  "Kurdwan\xF3w":
+    Witosa: &id158
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '24', '50']
+  Limanowskiego:
+    Korona: *id025
+    "Powsta\u0144c\xF3w Wielkopolskich": &id061
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '11', '13', '23']
+  "Lipi\u0144skiego":
+    Grota-Roweckiego: *id026
+    "Skrzy\u017Cowanie Grota": &id099
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+  Lipska:
+    "Dworzec P\u0142asz\xF3w Estakada": *id027
+    Gromadzka: *id028
+    Rzebika: &id088
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '20']
+  Lubicz:
+    "Dworzec G\u0142\xF3wny": *id029
+    Rondo Mogilskie: &id082
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '7', '10', '14', '20', '52', '62', '64']
+    Uniwersytet Ekonomiczny: &id141
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2']
+  M1 Al. Pokoju:
+    Rondo 308. Dywizjonu: &id069
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+    "TAURON Arena Krak\xF3w Al. Pokoju": &id128
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+  "Ma\u0142y P\u0142asz\xF3w":
+    Rzebika: &id089
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '20']
+  Meksyk:
+    Brama nr 5: *id030
+    Koksochemia: *id031
+  Miodowa:
+    "Starowi\u015Blna": &id109
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '19', '24', '69']
+    "\u015Aw.Wawrzy\u0144ca": &id175
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '19', '24', '69']
+  Mistrzejowice:
+    "Mi\u015Bnie\u0144ska": &id032
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14']
+  "Mi\u015Bnie\u0144ska":
+    Mistrzejowice: *id032
+    "Os.Z\u0142otego Wieku": &id043
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14']
+  Mrozowa:
+    Blokowa: *id033
+    Kombinat: *id034
+  Muzeum Lotnictwa:
+    AWF: *id035
+    "TAURON Arena Krak\xF3w Wieczysta": &id131
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '5', '9', '10', '52', '64']
+  Norymberska:
+    Grota-Roweckiego: *id036
+    Ruczaj: &id087
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '18', '23', '52', '62']
+  "Nowos\u0105decka":
+    Piaski Nowe: &id046
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '24', '50']
+    Witosa: &id159
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '24', '50']
+  "Nowy Bie\u017Can\xF3w":
+    "\u0106wikli\u0144skiej": &id167
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+  Nowy Kleparz:
+    Dworzec Towarowy: *id037
+    "P\u0119dzich\xF3w": &id064
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['7', '18']
+  Nowy Prokocim:
+    Teligi: &id139
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+    "\u0106wikli\u0144skiej": &id168
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+  "Ofiar D\u0105bia":
+    "D\u0105bie": *id038
+    Fabryczna: *id039
+  Oleandry:
+    Cracovia: *id040
+    Park Jordana: &id044
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+  Orzeszkowej:
+    Centrum Kongresowe ICE: *id041
+    Stradom: &id115
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '18', '22', '52', '62']
+  Os.Kolorowe:
+    Plac Centralny im. R.Reagana: &id050
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '10', '12', '22', '62']
+    "Rondo Czy\u017Cy\u0144skie": &id073
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '10', '12', '22', '62']
+  Os.Na Skarpie:
+    Klasztorna: *id042
+    Plac Centralny im. R.Reagana: &id051
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['10', '12']
+  "Os.Piast\xF3w":
+    "Piasta Ko\u0142odzieja": &id048
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21', '52', '64']
+  Os.Zgody:
+    Plac Centralny im. R.Reagana: &id052
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21']
+    Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id079
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['21']
+  "Os.Z\u0142otego Wieku":
+    "Mi\u015Bnie\u0144ska": *id043
+    Rondo Piastowskie: &id085
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '14']
+  Park Jordana:
+    Oleandry: *id044
+    Reymana: &id067
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+  Piaski Nowe:
+    Dauna: *id045
+    "Nowos\u0105decka": *id046
+  "Piasta Ko\u0142odzieja":
+    Kleeberga: *id047
+    "Os.Piast\xF3w": *id048
+  "Plac Bohater\xF3w Getta":
+    Korona: *id049
+    "Powsta\u0144c\xF3w Wielkopolskich": &id062
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '24', '69']
+    "\u015Aw.Wawrzy\u0144ca": &id176
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '19', '24', '69']
+  Plac Centralny im. R.Reagana:
+    Os.Kolorowe: *id050
+    Os.Na Skarpie: *id051
+    Os.Zgody: *id052
+    Struga: &id119
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '21', '22']
+  "Plac Inwalid\xF3w":
+    Batorego: *id053
+    "Urz\u0119dnicza": &id148
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['4', '8', '13', '14', '24', '64']
+  Plac Wolnica:
+    Korona: *id054
+    Stradom: &id116
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '8', '10', '13']
+  "Plac Wszystkich \u015Awi\u0119tych":
+    Filharmonia: *id055
+    "Skrzy\u017Cowanie Gertrudy": &id095
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '6', '8', '13', '18', '20', '69']
+  Plaza:
+    "D\u0105bie": *id056
+    "TAURON Arena Krak\xF3w Al. Pokoju": &id129
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '12', '14', '22', '62']
+  "Plesz\xF3w":
+    Koksochemia: *id057
+  "Poczta G\u0142\xF3wna":
+    "Dworzec G\u0142\xF3wny": *id058
+    "Skrzy\u017Cowanie Gertrudy": &id096
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '10', '20', '69']
+    "Starowi\u015Blna": &id110
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '3', '24', '52', '62', '69']
+  Politechnika:
+    "Dworzec G\u0142\xF3wny Zach\xF3d": *id059
+    "Skrzy\u017Cowanie Polibuda": &id102
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '5', '5', '19', '19', '50', '50', '69']
+  "Powsta\u0144c\xF3w Wielkopolskich":
+    "Cmentarz Podg\xF3rski": *id060
+    Limanowskiego: *id061
+    "Plac Bohater\xF3w Getta": *id062
+  Prokocim:
+    Prokocim Szpital: &id063
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+    Wlotowa: &id161
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+  Prokocim Szpital:
+    Prokocim: *id063
+    Teligi: &id140
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['3', '9', '13', '23', '69']
+  "P\u0119dzich\xF3w":
+    Nowy Kleparz: *id064
+    Stary Kleparz: &id112
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['7', '18']
+  Rakowicka:
+    Cmentarz Rakowicki: *id065
+    Uniwersytet Ekonomiczny: &id142
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2']
+  Reymana:
+    "Cichy K\u0105cik": *id066
+    Park Jordana: *id067
+  Rondo 308. Dywizjonu:
+    Centralna: *id068
+    M1 Al. Pokoju: *id069
+  "Rondo Czy\u017Cy\u0144skie":
+    "Bie\u0144czycka": *id070
+    Centralna: *id071
+    "Czy\u017Cyny": *id072
+    Os.Kolorowe: *id073
+  "Rondo Grzeg\xF3rzeckie":
+    Hala Targowa: *id074
+    Rondo Mogilskie: &id083
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['7', '9', '14', '19', '20', '50', '62']
+    "Teatr Vari\xE9t\xE9": &id138
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '7', '12', '14', '22', '62']
+    "Zab\u0142ocie": &id164
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['9', '20', '50']
+  Rondo Hipokratesa:
+    DH Wanda: *id075
+    Dunikowskiego: *id076
+  Rondo Kocmyrzowskie im. Ks. Gorzelanego:
+    "Bie\u0144czycka": *id077
+    DH Wanda: *id078
+    Os.Zgody: *id079
+    Teatr Ludowy: &id136
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5']
+  Rondo Matecznego:
+    "Rzemie\u015Blnicza": &id090
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '10', '11', '19', '23']
+    Smolki: &id105
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '10', '11', '19', '23']
+  Rondo Mogilskie:
+    "Cysters\xF3w": *id080
+    "Dworzec G\u0142\xF3wny Tunel": *id081
+    Lubicz: *id082
+    "Rondo Grzeg\xF3rzeckie": *id083
+  Rondo Piastowskie:
+    Dunikowskiego: *id084
+    "Os.Z\u0142otego Wieku": *id085
+  Ruczaj:
+    Kampus UJ: *id086
+    Norymberska: *id087
+  Rzebika:
+    Lipska: *id088
+    "Ma\u0142y P\u0142asz\xF3w": *id089
+  "Rzemie\u015Blnicza":
+    Rondo Matecznego: *id090
+    "\u0141agiewniki": &id170
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '10', '11', '19', '23']
+  Salwator:
+    Komorowskiego: *id091
+    Salwator:
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '1', '1', '2', '2', '2', '6', '6', '6']
+  "Sanktuarium Bo\u017Cego Mi\u0142osierdzia":
+    Solvay: &id107
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+    "\u0141agiewniki": &id171
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+    "\u0141agiewniki ZUS": &id172
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+  "Skrzy\u017Cowanie Dworcowa":
+    Dworcowa: *id092
+    "Dworzec P\u0142asz\xF3w Estakada": *id093
+    Kabel: *id094
+  "Skrzy\u017Cowanie Gertrudy":
+    "Plac Wszystkich \u015Awi\u0119tych": *id095
+    "Poczta G\u0142\xF3wna": *id096
+    Wawel: &id150
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '8', '10', '13', '18']
+    "\u015Aw.Gertrudy": &id174
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '6', '8', '8', '10', '13', '13', '18', '18']
+  "Skrzy\u017Cowanie Grota":
+    Borsucza: *id097
+    "Kobierzy\u0144ska": *id098
+    "Lipi\u0144skiego": *id099
+  "Skrzy\u017Cowanie Polibuda":
+    "Dworzec G\u0142\xF3wny Tunel": *id100
+    Dworzec Towarowy: *id101
+    Politechnika: *id102
+  "Skrzy\u017Cowanie UJ":
+    Filharmonia: *id103
+    Teatr Bagatela: &id133
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '8', '13', '18', '69']
+    "Uniwersytet Jagiello\u0144ski": &id144
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['20']
+  Smolki:
+    Korona: *id104
+    Rondo Matecznego: *id105
+  Solvay:
+    "Borek Fa\u0142\u0119cki I": *id106
+    "Sanktuarium Bo\u017Cego Mi\u0142osierdzia": *id107
+  "Starowi\u015Blna":
+    Hala Targowa: *id108
+    Miodowa: *id109
+    "Poczta G\u0142\xF3wna": *id110
+    Stradom: &id117
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['12', '22', '52', '62']
+  Stary Kleparz:
+    "Dworzec G\u0142\xF3wny": *id111
+    "P\u0119dzich\xF3w": *id112
+    Teatr Bagatela: &id134
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['2', '4', '14', '18', '24', '64', '69']
+  Stella-Sawickiego:
+    AWF: *id113
+    "Czy\u017Cyny": *id114
+  Stradom:
+    Orzeszkowej: *id115
+    Plac Wolnica: *id116
+    "Starowi\u015Blna": *id117
+    Wawel: &id151
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['6', '8', '10', '13', '18']
+  Struga:
+    Kombinat: *id118
+    Plac Centralny im. R.Reagana: *id119
+  Suche Stawy:
+    Bardosa: *id120
+    Klasztorna: *id121
+  Szpital Narutowicza:
+    "Bratys\u0142awska": *id122
+    Dworzec Towarowy: *id123
+  Szwedzka:
+    Centrum Kongresowe ICE: *id124
+    Kapelanka: *id125
+  "S\u0142omiana":
+    Kapelanka: *id126
+    "Kobierzy\u0144ska": *id127
+  "TAURON Arena Krak\xF3w Al. Pokoju":
+    M1 Al. Pokoju: *id128
+    Plaza: *id129
+  "TAURON Arena Krak\xF3w Wieczysta":
+    "Bia\u0142ucha": *id130
+    Muzeum Lotnictwa: *id131
+  Teatr Bagatela:
+    Batorego: *id132
+    "Skrzy\u017Cowanie UJ": *id133
+    Stary Kleparz: *id134
+  Teatr Ludowy:
+    Cienista: *id135
+    Rondo Kocmyrzowskie im. Ks. Gorzelanego: *id136
+  "Teatr Vari\xE9t\xE9":
+    Francesco Nullo: *id137
+    "Rondo Grzeg\xF3rzeckie": *id138
+  Teligi:
+    Nowy Prokocim: *id139
+    Prokocim Szpital: *id140
+  Uniwersytet Ekonomiczny:
+    Lubicz: *id141
+    Rakowicka: *id142
+  "Uniwersytet Jagiello\u0144ski":
+    Cracovia: *id143
+    "Skrzy\u017Cowanie UJ": *id144
+  Uniwersytet Pedagogiczny:
+    Biprostal: *id145
+    "G\u0142owackiego": *id146
+  "Urz\u0119dnicza":
+    Biprostal: *id147
+    "Plac Inwalid\xF3w": *id148
+  Walcownia:
+    "Agencja Krak\xF3w Wsch\xF3d": *id149
+  Wawel:
+    "Skrzy\u017Cowanie Gertrudy": *id150
+    Stradom: *id151
+  "Wa\u0144kowicza":
+    Cienista: *id152
+    Wiadukty: &id157
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['1', '5']
+  Wesele:
+    Balicka Wiadukt: *id153
+    Bronowice: *id154
+  Wiadukty:
+    Darwina: *id155
+    "Elektromonta\u017C": *id156
+    "Wa\u0144kowicza": *id157
+  Witosa:
+    "Kurdwan\xF3w": *id158
+    "Nowos\u0105decka": *id159
+  Wlotowa:
+    "Bie\u017Canowska": *id160
+    Prokocim: *id161
+  "Wzg\xF3rza Krzes\u0142awickie":
+    "Jarz\u0119biny": *id162
+  "Zab\u0142ocie":
+    Klimeckiego: *id163
+    "Rondo Grzeg\xF3rzeckie": *id164
+  Zajezdnia Nowa Huta:
+    "Elektromonta\u017C": *id165
+    Kombinat: *id166
+  "\u0106wikli\u0144skiej":
+    "Nowy Bie\u017Can\xF3w": *id167
+    Nowy Prokocim: *id168
+  "\u0141agiewniki":
+    "Bro\u017Cka": *id169
+    "Rzemie\u015Blnicza": *id170
+    "Sanktuarium Bo\u017Cego Mi\u0142osierdzia": *id171
+    "\u0141agiewniki":
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['11', '11', '11', '11', '23', '23', '23', '23']
+    "\u0141agiewniki ZUS": &id173
+      kolejka: !!python/object/apply:collections.deque
+      - []
+      linie: ['8', '19', '22']
+  "\u0141agiewniki ZUS":
+    "Sanktuarium Bo\u017Cego Mi\u0142osierdzia": *id172
+    "\u0141agiewniki": *id173
+  "\u015Aw.Gertrudy":
+    "Skrzy\u017Cowanie Gertrudy": *id174
+  "\u015Aw.Wawrzy\u0144ca":
+    Miodowa: *id175
+    "Plac Bohater\xF3w Getta": *id176
+adjlist_dict_factory: &id178 !!python/name:builtins.dict ''
+edge: *id177
+edge_attr_dict_factory: *id178
+graph: {}
+node:
+  AWF:
+    pos: !!python/tuple [19996650.0, 50073859.0]
+  "Agencja Krak\xF3w Wsch\xF3d":
+    pos: !!python/tuple [20079723.0, 50087794.0]
+  Balicka Wiadukt:
+    pos: !!python/tuple [19890407.0, 50081158.0]
+  Bardosa:
+    pos: !!python/tuple [20064615.0, 50067722.0]
+  Batorego:
+    pos: !!python/tuple [19929095.0, 50066827.0]
+  "Bia\u0142ucha":
+    pos: !!python/tuple [19977556.0, 50067707.0]
+  "Bie\u0144czycka":
+    pos: !!python/tuple [20020888.0, 50075880.0]
+  "Bie\u017Canowska":
+    pos: !!python/tuple [19979243.0, 50023546.0]
+  Biprostal:
+    pos: !!python/tuple [19915592.0, 50072977.0]
+  Blokowa:
+    pos: !!python/tuple [20074393.0, 50085314.0]
+  "Borek Fa\u0142\u0119cki":
+    pos: !!python/tuple [19926947.0, 50012775.0]
+  "Borek Fa\u0142\u0119cki I":
+    pos: !!python/tuple [19928098.0, 50014518.0]
+  Borsucza:
+    pos: !!python/tuple [19929065.0, 50030506.0]
+  Brama nr 4:
+    pos: !!python/tuple [20074978.0, 50064939.0]
+  Brama nr 5:
+    pos: !!python/tuple [20092155.0, 50069602.0]
+  "Bratys\u0142awska":
+    pos: !!python/tuple [19933827.0, 50084248.0]
+  Bronowice:
+    pos: !!python/tuple [19901304.0, 50077622.0]
+  "Bronowice Ma\u0142e":
+    pos: !!python/tuple [19881340.0, 50081782.0]
+  "Bro\u017Cka":
+    pos: !!python/tuple [19931328.0, 50030500.0]
+  Centralna:
+    pos: !!python/tuple [20012625.0, 50069369.0]
+  Centrum Kongresowe ICE:
+    pos: !!python/tuple [19931053.0, 50048584.0]
+  Chmieleniec:
+    pos: !!python/tuple [19897889.0, 50020665.0]
+  "Cichy K\u0105cik":
+    pos: !!python/tuple [19903349.0, 50062731.0]
+  Cienista:
+    pos: !!python/tuple [20038143.0, 50085176.0]
+  "Cmentarz Podg\xF3rski":
+    pos: !!python/tuple [19963991.0, 50039373.0]
+  Cmentarz Rakowicki:
+    pos: !!python/tuple [19957305.0, 50074096.0]
+  Cracovia:
+    pos: !!python/tuple [19924948.0, 50059415.0]
+  "Cysters\xF3w":
+    pos: !!python/tuple [19970393.0, 50066536.0]
+  Czerwone Maki P+R:
+    pos: !!python/tuple [19889394.0, 50018202.0]
+  "Czy\u017Cyny":
+    pos: !!python/tuple [20011976.0, 50073965.0]
+  DH Wanda:
+    pos: !!python/tuple [20020689.0, 50084457.0]
+  Darwina:
+    pos: !!python/tuple [20059280.0, 50090945.0]
+  Dauna:
+    pos: !!python/tuple [19977567.0, 50018394.0]
+  Dunikowskiego:
+    pos: !!python/tuple [20015383.0, 50092622.0]
+  Dworcowa:
+    pos: !!python/tuple [19970588.0, 50033117.0]
+  "Dworzec G\u0142\xF3wny":
+    pos: !!python/tuple [19945409.0, 50064738.0]
+  "Dworzec G\u0142\xF3wny Tunel":
+    pos: !!python/tuple [19946360.0, 50068807.0]
+  "Dworzec G\u0142\xF3wny Zach\xF3d":
+    pos: !!python/tuple [19945321.0, 50068628.0]
+  "Dworzec P\u0142asz\xF3w Estakada":
+    pos: !!python/tuple [19977981.0, 50034361.0]
+  Dworzec Towarowy:
+    pos: !!python/tuple [19940162.0, 50075755.0]
+  "D\u0105bie":
+    pos: !!python/tuple [19979332.0, 50060843.0]
+  "Elektromonta\u017C":
+    pos: !!python/tuple [20063940.0, 50087704.0]
+  Fabryczna:
+    pos: !!python/tuple [19970764.0, 50060342.0]
+  Filharmonia:
+    pos: !!python/tuple [19933268.0, 50058999.0]
+  Francesco Nullo:
+    pos: !!python/tuple [19967276.0, 50060122.0]
+  Gromadzka:
+    pos: !!python/tuple [19978155.0, 50040632.0]
+  Grota-Roweckiego:
+    pos: !!python/tuple [19920626.0, 50031736.0]
+  "G\u0142owackiego":
+    pos: !!python/tuple [19905445.0, 50076044.0]
+  Hala Targowa:
+    pos: !!python/tuple [19948416.0, 50058599.0]
+  "Jarz\u0119biny":
+    pos: !!python/tuple [20061327.0, 50092237.0]
+  "Je\u017Cynowa":
+    pos: !!python/tuple [20084861.0, 50064889.0]
+  Jubilat:
+    pos: !!python/tuple [19927488.0, 50055169.0]
+  Kabel:
+    pos: !!python/tuple [19976980.0, 50026847.0]
+  Kampus UJ:
+    pos: !!python/tuple [19901657.0, 50024337.0]
+  Kapelanka:
+    pos: !!python/tuple [19921943.0, 50045354.0]
+  Klasztorna:
+    pos: !!python/tuple [20052578.0, 50068538.0]
+  Kleeberga:
+    pos: !!python/tuple [20012685.0, 50095607.0]
+  Klimeckiego:
+    pos: !!python/tuple [19967561.0, 50049010.0]
+  "Kobierzy\u0144ska":
+    pos: !!python/tuple [19925961.0, 50034812.0]
+  Koksochemia:
+    pos: !!python/tuple [20104515.0, 50071908.0]
+  Kombinat:
+    pos: !!python/tuple [20065637.0, 50079262.0]
+  Komorowskiego:
+    pos: !!python/tuple [19921807.0, 50053389.0]
+  Kopiec Wandy:
+    pos: !!python/tuple [20066850.0, 50069825.0]
+  Korona:
+    pos: !!python/tuple [19947039.0, 50043814.0]
+  "Krowodrza G\xF3rka":
+    pos: !!python/tuple [19931201.0, 50088926.0]
+  "Kukli\u0144skiego":
+    pos: !!python/tuple [19973513.0, 50044652.0]
+  "Kurdwan\xF3w":
+    pos: !!python/tuple [19948588.0, 50013306.0]
+  Limanowskiego:
+    pos: !!python/tuple [19955442.0, 50045117.0]
+  "Lipi\u0144skiego":
+    pos: !!python/tuple [19924984.0, 50030756.0]
+  Lipska:
+    pos: !!python/tuple [19983071.0, 50040642.0]
+  Lubicz:
+    pos: !!python/tuple [19951635.0, 50065110.0]
+  M1 Al. Pokoju:
+    pos: !!python/tuple [19996884.0, 50065559.0]
+  "Ma\u0142y P\u0142asz\xF3w":
+    pos: !!python/tuple [20001056.0, 50040107.0]
+  Meksyk:
+    pos: !!python/tuple [20094601.0, 50069822.0]
+  Miodowa:
+    pos: !!python/tuple [19948402.0, 50053635.0]
+  Mistrzejowice:
+    pos: !!python/tuple [19995738.0, 50095027.0]
+  "Mi\u015Bnie\u0144ska":
+    pos: !!python/tuple [19999954.0, 50094484.0]
+  Mrozowa:
+    pos: !!python/tuple [20071703.0, 50084080.0]
+  Muzeum Lotnictwa:
+    pos: !!python/tuple [19990540.0, 50073523.0]
+  Norymberska:
+    pos: !!python/tuple [19912740.0, 50029927.0]
+  "Nowos\u0105decka":
+    pos: !!python/tuple [19964949.0, 50013527.0]
+  "Nowy Bie\u017Can\xF3w":
+    pos: !!python/tuple [20023676.0, 50015500.0]
+  Nowy Kleparz:
+    pos: !!python/tuple [19936360.0, 50073483.0]
+  Nowy Prokocim:
+    pos: !!python/tuple [20012797.0, 50016221.0]
+  "Ofiar D\u0105bia":
+    pos: !!python/tuple [19976280.0, 50059605.0]
+  Oleandry:
+    pos: !!python/tuple [19920717.0, 50059844.0]
+  Orzeszkowej:
+    pos: !!python/tuple [19938470.0, 50050567.0]
+  Os.Kolorowe:
+    pos: !!python/tuple [20029184.0, 50072280.0]
+  Os.Na Skarpie:
+    pos: !!python/tuple [20045817.0, 50069753.0]
+  "Os.Piast\xF3w":
+    pos: !!python/tuple [20011809.0, 50102268.0]
+  Os.Zgody:
+    pos: !!python/tuple [20031146.0, 50076701.0]
+  "Os.Z\u0142otego Wieku":
+    pos: !!python/tuple [20004830.0, 50093634.0]
+  Park Jordana:
+    pos: !!python/tuple [19917815.0, 50060315.0]
+  Piaski Nowe:
+    pos: !!python/tuple [19971453.0, 50015446.0]
+  "Piasta Ko\u0142odzieja":
+    pos: !!python/tuple [20013086.0, 50098724.0]
+  "Plac Bohater\xF3w Getta":
+    pos: !!python/tuple [19954966.0, 50046761.0]
+  Plac Centralny im. R.Reagana:
+    pos: !!python/tuple [20037283.0, 50072068.0]
+  "Plac Inwalid\xF3w":
+    pos: !!python/tuple [19926437.0, 50069096.0]
+  Plac Wolnica:
+    pos: !!python/tuple [19943449.0, 50048089.0]
+  "Plac Wszystkich \u015Awi\u0119tych":
+    pos: !!python/tuple [19937958.0, 50059116.0]
+  Plaza:
+    pos: !!python/tuple [19984035.0, 50063070.0]
+  "Plesz\xF3w":
+    pos: !!python/tuple [20117364.0, 50072851.0]
+  "Poczta G\u0142\xF3wna":
+    pos: !!python/tuple [19942140.0, 50059512.0]
+  Politechnika:
+    pos: !!python/tuple [19944938.0, 50070865.0]
+  "Powsta\u0144c\xF3w Wielkopolskich":
+    pos: !!python/tuple [19960980.0, 50042112.0]
+  Prokocim:
+    pos: !!python/tuple [19991241.0, 50017923.0]
+  Prokocim Szpital:
+    pos: !!python/tuple [19999651.0, 50014376.0]
+  "P\u0119dzich\xF3w":
+    pos: !!python/tuple [19937693.0, 50069458.0]
+  Rakowicka:
+    pos: !!python/tuple [19954874.0, 50071299.0]
+  Reymana:
+    pos: !!python/tuple [19910796.0, 50061313.0]
+  Rondo 308. Dywizjonu:
+    pos: !!python/tuple [20005107.0, 50067343.0]
+  "Rondo Czy\u017Cy\u0144skie":
+    pos: !!python/tuple [20017455.0, 50073456.0]
+  "Rondo Grzeg\xF3rzeckie":
+    pos: !!python/tuple [19958961.0, 50057639.0]
+  Rondo Hipokratesa:
+    pos: !!python/tuple [20021428.0, 50090121.0]
+  Rondo Kocmyrzowskie im. Ks. Gorzelanego:
+    pos: !!python/tuple [20027343.0, 50079617.0]
+  Rondo Matecznego:
+    pos: !!python/tuple [19940624.0, 50036344.0]
+  Rondo Mogilskie:
+    pos: !!python/tuple [19959375.0, 50065972.0]
+  Rondo Piastowskie:
+    pos: !!python/tuple [20011343.0, 50094379.0]
+  Ruczaj:
+    pos: !!python/tuple [19905748.0, 50027189.0]
+  Rzebika:
+    pos: !!python/tuple [19991639.0, 50040502.0]
+  "Rzemie\u015Blnicza":
+    pos: !!python/tuple [19938549.0, 50033259.0]
+  Salwator:
+    pos: !!python/tuple [19914849.0, 50052744.0]
+  "Sanktuarium Bo\u017Cego Mi\u0142osierdzia":
+    pos: !!python/tuple [19932805.0, 50022486.0]
+  "Skrzy\u017Cowanie Dworcowa":
+    pos: !!python/tuple [19972469.0, 50031311.0]
+  "Skrzy\u017Cowanie Gertrudy":
+    pos: !!python/tuple [19941169.0, 50058900.0]
+  "Skrzy\u017Cowanie Grota":
+    pos: !!python/tuple [19926248.0, 50030759.0]
+  "Skrzy\u017Cowanie Polibuda":
+    pos: !!python/tuple [19944717.0, 50073925.0]
+  "Skrzy\u017Cowanie UJ":
+    pos: !!python/tuple [19932371.0, 50060504.0]
+  Smolki:
+    pos: !!python/tuple [19943163.0, 50041546.0]
+  Solvay:
+    pos: !!python/tuple [19929565.0, 50016236.0]
+  "Starowi\u015Blna":
+    pos: !!python/tuple [19945323.0, 50056549.0]
+  Stary Kleparz:
+    pos: !!python/tuple [19939055.0, 50066266.0]
+  Stella-Sawickiego:
+    pos: !!python/tuple [20004620.0, 50074298.0]
+  Stradom:
+    pos: !!python/tuple [19941635.0, 50051749.0]
+  Struga:
+    pos: !!python/tuple [20042946.0, 50073659.0]
+  Suche Stawy:
+    pos: !!python/tuple [20059390.0, 50067478.0]
+  Szpital Narutowicza:
+    pos: !!python/tuple [19937413.0, 50080825.0]
+  Szwedzka:
+    pos: !!python/tuple [19925394.0, 50046734.0]
+  "S\u0142omiana":
+    pos: !!python/tuple [19924273.0, 50041174.0]
+  "TAURON Arena Krak\xF3w Al. Pokoju":
+    pos: !!python/tuple [19989669.0, 50064288.0]
+  "TAURON Arena Krak\xF3w Wieczysta":
+    pos: !!python/tuple [19983275.0, 50071345.0]
+  Teatr Bagatela:
+    pos: !!python/tuple [19932931.0, 50063455.0]
+  Teatr Ludowy:
+    pos: !!python/tuple [20032450.0, 50082061.0]
+  "Teatr Vari\xE9t\xE9":
+    pos: !!python/tuple [19962406.0, 50058830.0]
+  Teligi:
+    pos: !!python/tuple [20007563.0, 50016548.0]
+  Uniwersytet Ekonomiczny:
+    pos: !!python/tuple [19952389.0, 50067971.0]
+  "Uniwersytet Jagiello\u0144ski":
+    pos: !!python/tuple [19931238.0, 50060327.0]
+  Uniwersytet Pedagogiczny:
+    pos: !!python/tuple [19910376.0, 50074204.0]
+  "Urz\u0119dnicza":
+    pos: !!python/tuple [19919615.0, 50071893.0]
+  Walcownia:
+    pos: !!python/tuple [20084663.0, 50090805.0]
+  Wawel:
+    pos: !!python/tuple [19939210.0, 50054212.0]
+  "Wa\u0144kowicza":
+    pos: !!python/tuple [20047483.0, 50086925.0]
+  Wesele:
+    pos: !!python/tuple [19897041.0, 50079152.0]
+  Wiadukty:
+    pos: !!python/tuple [20056936.0, 50088519.0]
+  Witosa:
+    pos: !!python/tuple [19955484.0, 50012436.0]
+  Wlotowa:
+    pos: !!python/tuple [19988366.0, 50019184.0]
+  "Wzg\xF3rza Krzes\u0142awickie":
+    pos: !!python/tuple [20065670.0, 50095070.0]
+  "Zab\u0142ocie":
+    pos: !!python/tuple [19965185.0, 50049715.0]
+  Zajezdnia Nowa Huta:
+    pos: !!python/tuple [20065574.0, 50083132.0]
+  "\u0106wikli\u0144skiej":
+    pos: !!python/tuple [20018955.0, 50016173.0]
+  "\u0141agiewniki":
+    pos: !!python/tuple [19936224.0, 50029670.0]
+  "\u0141agiewniki ZUS":
+    pos: !!python/tuple [19934085.0, 50024922.0]
+  "\u015Aw.Gertrudy":
+    pos: !!python/tuple [19941156.0, 50058910.0]
+  "\u015Aw.Wawrzy\u0144ca":
+    pos: !!python/tuple [19951053.0, 50051159.0]
+node_dict_factory: *id178

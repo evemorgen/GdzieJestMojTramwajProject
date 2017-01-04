@@ -1,13 +1,21 @@
 import networkx as nx
-from networkx.readwrite import json_graph
 import matplotlib.pyplot as plt
 import json
 import sqlite3
+from collections import deque
+
+
+def czy_skrzyzowanie(przystanek, skrzyzowania, wariant):
+    for skrzyzowanie in skrzyzowania:
+        if przystanek in punkty[skrzyzowanie]['between'] and wariant[1][wariant[1].index(przystanek) + 1] in punkty[skrzyzowanie]['between']:
+            return skrzyzowanie
+    return None
+
 
 db_connection = sqlite3.connect('/Users/evemorgen/Dropbox/projekty/GdzieJestTenCholernyTramwajProject/backend/schedule_worker/data/baza.ready.zip')
 cursor = db_connection.cursor()
 
-linie = [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "16", "18", "19", "20", "21", "22", "23", "24", "50", "52", "62", "64", "69" ]
+linie = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "16", "18", "19", "20", "21", "22", "23", "24", "50", "52", "62", "64", "69"]
 
 dokladne_linie = {klucz: [] for klucz in linie}
 for linia in linie:
@@ -67,19 +75,24 @@ edges = {}
 for linia in linie:
     for wariant in dokladne_linie[linia]:
         for przystanek in wariant[1][:-1]:
-            kraw = tuple([przystanek, wariant[1][wariant[1].index(przystanek)+1]])
-            if kraw in edges:
-                edges[kraw].append(linia)
+            ze_skrzyzowaniem = czy_skrzyzowanie(przystanek, skrzyzowania, wariant)
+            if ze_skrzyzowaniem is not None:
+                kraw1 = tuple([przystanek, ze_skrzyzowaniem])
+                if kraw1 in edges:
+                    edges[kraw1].append(linia)
+                else:
+                    edges[kraw1] = [linia]
             else:
-                edges[kraw] = [linia]
+                kraw = tuple([przystanek, wariant[1][wariant[1].index(przystanek) + 1]])
+                if kraw in edges:
+                    edges[kraw].append(linia)
+                else:
+                    edges[kraw] = [linia]
 
 for edge, label in edges.items():
-    G.add_edge(edge[0], edge[1], linie=label)
+    G.add_edge(edge[0], edge[1], linie=label, kolejka=deque())
 nx.draw_networkx_edges(G, pos)
-nx.draw_networkx_edge_labels(G, pos)
+# nx.draw_networkx_edge_labels(G, pos)
 
 plt.savefig('graph.png', format='png', dpi=75)
-plt.show()
-
-with open('graph.json', 'w') as plik:
-    json.dump(json_graph.node_link_data(G), plik)
+nx.write_yaml(G, 'graph.yaml')

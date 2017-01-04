@@ -605,7 +605,8 @@
         "on_demand": false,
         "petla": false,
         "skrzyzowanie": true,
-        "x": "50.030759"
+        "x": "50.030759",
+        "between": ["Lipi\u0144skiego", "Borsucza", "Kobierzy\u0144ska"]
     },
     "Ruczaj": {
         "przystanek": true,
@@ -1045,7 +1046,8 @@
         "on_demand": false,
         "petla": false,
         "skrzyzowanie": true,
-        "x": "50.058900"
+        "x": "50.058900",
+        "between": ["Plac Wszystkich \u015awi\u0119tych", "\u015aw.Gertrudy", "Poczta G\u0142\u00f3wna", "Wawel"]
     },
     "Rzemie\u015blnicza": {
         "przystanek": true,
@@ -1061,7 +1063,8 @@
         "on_demand": false,
         "petla": false,
         "skrzyzowanie": true,
-        "x": "50.060504"
+        "x": "50.060504",
+        "between": ["Uniwersytet Jagiello\u0144ski", "Filharmonia", "Teatr Bagatela"]
     },
     "Poczta G\u0142\u00f3wna": {
         "przystanek": true,
@@ -1241,11 +1244,12 @@
     },
     "Skrzy\u017cowanie Dworcowa": {
         "przystanek": false,
-        "y": "19.970806",
+        "y": "19.972469",
         "on_demand": false,
         "petla": false,
         "skrzyzowanie": true,
-        "x": "50.033103"
+        "x": "50.031311",
+        "between": ["Dworcowa", "Dworzec P\u0142asz\u00f3w Estakada", "Kabel"]
     },
     "Muzeum Lotnictwa": {
         "przystanek": true,
@@ -1293,7 +1297,8 @@
         "on_demand": false,
         "petla": false,
         "skrzyzowanie": true,
-        "x": "50.073925"
+        "x": "50.073925",
+        "between": ["Politechnika", "Dworzec Towarowy", "Dworzec G\u0142\u00f3wny Tunel"]
     },
     "Darwina": {
         "przystanek": true,
