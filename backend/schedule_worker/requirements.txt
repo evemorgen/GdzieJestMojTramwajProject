@@ -1,3 +1,5 @@
 coloredlogs==5.2
 tornado==4.4
 pyyaml==3.12
+networkx==1.11
+matplotlib==1.5.3
