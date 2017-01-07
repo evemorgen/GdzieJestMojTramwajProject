@@ -38,3 +38,29 @@ class MpkDb():
         for tupel in data:
             points_dict[tupel[0]] += [tupel[1]]
         return points_dict
+
+    def get_variants_for_line(self, linia):
+        query = """
+                select id
+                from Variants
+                where SheduleId = (
+                    select ID
+                    from Shedules
+                    where LineName = %s
+                    order by LastUpdate DESC
+                    limit 1
+                ) and "Default" = 1
+                """
+        self.cursor.execute(query % linia)
+        warianty = [tupel[0] for tupel in self.cursor.fetchall()]
+        return warianty
+
+    def get_stops_for_variant(self, variant_id):
+            query = """
+                    select No, StopName
+                    from routes
+                    where VariantId = %s
+                    """
+            self.cursor.execute(query % variant_id)
+            przystanki = [tupel[1] for tupel in self.cursor.fetchall()]
+            return przystanki
