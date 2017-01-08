@@ -20,9 +20,9 @@ class SpawnWorker(YieldPeriodicCallback):
         self.przystanki_db = PrzystankiDb()
         self.przystanki = Przystanki()
         self.tramwaje = []
-        self.factorio = TramwajFactory()
-        self.factorio.factory(18, "Krowodrza Górka")
-        YieldPeriodicCallback.__init__(self, self.run, 60000, faststart=True)
+        #self.factorio = TramwajFactory()
+        #self.factorio.factory(18, "Krowodrza Górka")
+        #YieldPeriodicCallback.__init__(self, self.run, 60000, faststart=True)
         logging.info('SpawnWorker initialised')
 
     @coroutine

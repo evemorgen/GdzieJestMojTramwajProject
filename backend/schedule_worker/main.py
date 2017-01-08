@@ -14,7 +14,7 @@ def make_app():
     return Application([
         (r'/healthcheck', HealthCheck),
         (r'/mpk_db/(.*)', TTworker, {'tt_worker': tt_worker}),
-        (r'/generate_graph', GraphHandler)
+        (r'/graph_api/(.*)', GraphHandler)
     ])
 
 if __name__ == "__main__":
