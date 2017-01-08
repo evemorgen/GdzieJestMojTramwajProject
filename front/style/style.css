@@ -32,3 +32,21 @@ th, td {
     padding: 15px;
     text-align: left;
 }
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+#map {
+	margin-left: 5%;
+        height: 100%;
+        width: 100%;
+    }
+
+.angular-google-map,
+.angular-google-map-container {
+  width: 95%;
+  height: 90%;
+}
