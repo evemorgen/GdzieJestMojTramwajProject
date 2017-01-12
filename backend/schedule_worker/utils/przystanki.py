@@ -21,7 +21,20 @@ class Przystanki(metaclass=Singleton):
         self.petle = {k: v for k, v in self.cfg.items() if self.cfg[k]['petla'] is True}
         self.skrzyzowania = {k: v for k, v in self.cfg.items() if self.cfg[k]['skrzyzowanie'] is True}
         self.przystanki = {k: v for k, v in self.cfg.items() if self.cfg[k]['przystanek'] is True}
+        self.wszystkie = {**self.petle, **self.skrzyzowania, **self.przystanki}
         logging.info('Przystanki initialised')
+
+    def get_edges(self, line=None):
+        edges = self.graph.edges(data=True)
+        res = []
+        for edge in edges:
+            coords = [{'latitude': self.wszystkie[edge[0]]['x'], 'longitude': self.wszystkie[edge[0]]['y']},
+                      {'latitude': self.wszystkie[edge[1]]['x'], 'longitude': self.wszystkie[edge[1]]['y']}]
+            if line is not None:
+                if str(line) not in edge[2]['linie']:
+                    continue
+            res.append((coords, edge[2]['odleglosc']))
+        return res
 
     def get(self, item, default=None):
         return self.cfg.get(item, default)
