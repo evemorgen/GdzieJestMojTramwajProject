@@ -5,7 +5,14 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
     $scope.mapZoom = 15;
     $scope.markery = [];
     $scope.krawedzie = [];
-    $scope.trams = []
+    $scope.trams = [];
+    $scope.lastClicked = null;
+    $scope.tramString = `
+    <h3>Hello from tram number: <b>%(name)s</b></h3>
+    last stop: %(lastStop)s <br />
+    next stop %(nextStop)s <br />
+    velocity: %(velocity)skm/h <br />
+    `
     $scope.getStops = function(endpoint, iconUrl) {
         $http({
             //url: $rootScope.config.url + '/graph_api/get_all_stops',
@@ -28,6 +35,15 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
         });
     };
 
+    $scope.clearEdges = function(){
+        for(krawedz in $scope.krawedzie){
+            if($scope.krawedzie.hasOwnProperty(krawedz)){
+                $scope.krawedzie[krawedz].setMap(null);
+            }
+        }
+        $scope.krawedzie = [];
+    };
+
     $scope.showEdges = function(line){
         $http.post(
             'http://0.0.0.0:8888/graph_api/get_graph_edges',
@@ -35,12 +51,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
         ).then(function(response){
             var edges = response.data.data;
             var color = '#' + (md5.createHash(line.toString())).substring(0,6);
-            for(krawedz in $scope.krawedzie){
-                if($scope.krawedzie.hasOwnProperty(krawedz)){
-                    $scope.krawedzie[krawedz].setMap(null);
-                }
-            }
-            $scope.krawedzie = []
+            $scope.clearEdges();
             for(var edge in edges){
                     if(edges.hasOwnProperty(edge)){
                         var pin1 = new google.maps.LatLng(edges[edge][0][0].latitude, edges[edge][0][0].longitude)
@@ -48,6 +59,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
                         var tmpPolyline = new google.maps.Polyline({
                             path: [pin1, pin2],
                             strokeColor: color,
+                            strokeWeight: 2,
                             visible: true,
                             map: $scope.map
                         });
@@ -64,43 +76,54 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
             var trams = response.data.data;
             for(var tram in $scope.trams){
                 if(trams.hasOwnProperty(tram)){
-                    console.log($scope.trams)
                     $scope.trams[tram].setMap(null);
                 };
             };
             $scope.trams = []
             for(var tram in trams){
                 if(trams.hasOwnProperty(tram)){
-                    $scope.createTram(trams[tram].line, {x: trams[tram].position.x, y: trams[tram].position.y});
+                    $scope.createTram(trams[tram].line, {x: trams[tram].position.x, y: trams[tram].position.y}, trams[tram]);
                 };
             };
         });
     };
-    $scope.createTram = function(line, pos) {
+    $scope.createTram = function(line, pos, tramInfo) {
         pos = new google.maps.LatLng(pos.x, pos.y);
         marker = new google.maps.Marker({
             title: line.toString(),
             position: pos,
             map: $scope.map,
-            icon: '../statics/tram.png',
+            icon: '../statics/redtrain.png',
             zIndex: 999
         });
+        marker.addListener('click', function(){
+            if($scope.lastClicked == this.title){
+                $scope.clearEdges();
+                $scope.lastClicked = null;
+            } else {
+                var infobox = new google.maps.InfoWindow({
+                    content: sprintf($scope.tramString, {
+                        name: this.title,
+                        lastStop: tramInfo.last_stop['name'],
+                        nextStop: tramInfo.next_stop['name'],
+                        velocity: tramInfo.velocity
+                    })
+                });
+                infobox.open($scope.map, this);
+                $scope.showEdges(this.title);
+                $scope.lastClicked = this.title;
+            }
+        })
         $scope.trams.push(marker);
     };
     $scope.gen_map = function(){
         $scope.getStops('get_all_stops', '../statics/bus-stop-black.png');
-        $scope.getStops('get_all_terminals', '../statics/bus-stop-red.png');
-        $scope.getStops('get_all_crossings', '../statics/crossroads.png');
-    };
-    $scope.gen_edges = function() {
-        var trams = [1, 2, 18, 20, 50, 69]
-        var item = trams[Math.floor(Math.random()*trams.length)];
-        $scope.showEdges(item);
+        $scope.getStops('get_all_terminals', '../statics/stop.png');
+        //$scope.getStops('get_all_crossings', '../statics/crossroads.png');
     };
     $scope.get_new_trams = function(){
         $scope.getTrams(18);
     };
     $interval($scope.gen_map, 2000, 1);
-    $interval($scope.gen_edges, 5000, 5);
     $interval($scope.get_new_trams, 10000);
 });
