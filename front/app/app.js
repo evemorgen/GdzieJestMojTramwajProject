@@ -1,4 +1,4 @@
-var app = angular.module('projectMiss', ['checkCtrl', 'googleMaps', 'uiGmapgoogle-maps']);
+var app = angular.module('projectMiss', ['checkCtrl', 'googleMaps', 'ngMap']);
 
 
 app.run(function($http, $rootScope) {
