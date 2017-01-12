@@ -37,16 +37,15 @@ html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-      }
+}
 
-#map {
-	margin-left: 5%;
-        height: 100%;
-        width: 100%;
-    }
+#map, #ngmap {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
 
-.angular-google-map,
-.angular-google-map-container {
-  width: 95%;
-  height: 90%;
+#wholePageContainer{
+    height: 70%;
 }
