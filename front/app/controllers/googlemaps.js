@@ -82,15 +82,15 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
             title: line.toString(),
             position: pos,
             map: $scope.map,
-            icon: '../statics/tram.png',
+            icon: '../statics/redtrain.png',
             zIndex: 999
         });
         $scope.trams.push(marker);
     };
     $scope.gen_map = function(){
-        $scope.getStops('get_all_stops', '../statics/bus-stop-black.png');
-        $scope.getStops('get_all_terminals', '../statics/bus-stop-red.png');
-        $scope.getStops('get_all_crossings', '../statics/crossroads.png');
+        $scope.getStops('get_all_stops', '../statics/stop.png');
+        $scope.getStops('get_all_terminals', '../statics/stop.png');
+        //$scope.getStops('get_all_crossings', '../statics/crossroads.png');
     };
     $scope.gen_edges = function() {
         var trams = [1, 2, 18, 20, 50, 69]
