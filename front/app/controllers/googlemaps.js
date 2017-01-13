@@ -9,14 +9,15 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
     $scope.lastClicked = null;
     $scope.tramString = `
     <div id="infoWindow" >
-        <h3>Hello from tram number: <b>%(name)s</b></h3>
-        last stop: %(lastStop)s <br />
-        next stop %(nextStop)s <br />
-        velocity: %(velocity)skm/h <br />
-        state: %(state)s <br />
-        distance to next stop: %(distance)s m <br />
-        last update: %(lastUp)s <br />
-        <div id="infoWindowHandler"></<div>
+        <h3><span class="label label-primary">Hello from tram number: <b>%(name)s</span></h3>
+        <div id="infoWindowContent">   
+            last stop: %(lastStop)s <br />
+            next stop %(nextStop)s <br />
+            velocity: %(velocity)skm/h <br />
+            state: %(state)s <br />
+            distance to next stop: %(distance)s m <br />
+            last update: %(lastUp)s <br />
+        </div>
     </div>  
     `
     $scope.getStops = function(endpoint, iconUrl) {
@@ -115,7 +116,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
                         velocity: tramInfo.velocity,
                         state: tramInfo.state,
                         distance: String(tramInfo.distance_to_go).substr(0, String(tramInfo.distance_to_go).indexOf(".")),
-                        lastUp: tramInfo.last_update
+                        lastUp: String(new Date(tramInfo.last_update * 1000)).substr(16,8)
                     })
                 });
                 infobox.open($scope.map, this);
