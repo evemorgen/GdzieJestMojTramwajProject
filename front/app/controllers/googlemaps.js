@@ -8,10 +8,16 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
     $scope.trams = [];
     $scope.lastClicked = null;
     $scope.tramString = `
-    <h3>Hello from tram number: <b>%(name)s</b></h3>
-    last stop: %(lastStop)s <br />
-    next stop %(nextStop)s <br />
-    velocity: %(velocity)skm/h <br />
+    <div id="infoWindow" >
+        <h3>Hello from tram number: <b>%(name)s</b></h3>
+        last stop: %(lastStop)s <br />
+        next stop %(nextStop)s <br />
+        velocity: %(velocity)skm/h <br />
+        state: %(state)s <br />
+        distance to next stop: %(distance)s m <br />
+        last update: %(lastUp)s <br />
+        <div id="infoWindowHandler"></<div>
+    </div>  
     `
     $scope.getStops = function(endpoint, iconUrl) {
         $http({
@@ -93,7 +99,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
             title: line.toString(),
             position: pos,
             map: $scope.map,
-            icon: '../statics/redtrain.png',
+            icon: '../statics/bluetrain.png',
             zIndex: 999
         });
         marker.addListener('click', function(){
@@ -106,7 +112,10 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
                         name: this.title,
                         lastStop: tramInfo.last_stop['name'],
                         nextStop: tramInfo.next_stop['name'],
-                        velocity: tramInfo.velocity
+                        velocity: tramInfo.velocity,
+                        state: tramInfo.state,
+                        distance: String(tramInfo.distance_to_go).substr(0, String(tramInfo.distance_to_go).indexOf(".")),
+                        lastUp: tramInfo.last_update
                     })
                 });
                 infobox.open($scope.map, this);
