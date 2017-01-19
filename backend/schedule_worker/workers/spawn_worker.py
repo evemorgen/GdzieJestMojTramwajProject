@@ -37,7 +37,7 @@ class SpawnWorker(YieldPeriodicCallback):
                 'y': tram.position['y']
             },
             'distance_to_go': tram.distance_to_go,
-            'last_update': tram.last_updated
+            'last_update': tram.last_update
         }
 
     def get_json_tram(self, line):

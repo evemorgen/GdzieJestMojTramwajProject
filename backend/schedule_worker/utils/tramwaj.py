@@ -31,7 +31,8 @@ class Tramwaj:
             'y': self.przystanki.petle[self.last_stop['name']]['y']
         }
         self.distance_to_go = 0
-        self.last_updated = time.time()
+        self.last_update = time.time()
+        #self.last_updated = time.time()
         self.calculate_distance()
 
     def __repr__(self):

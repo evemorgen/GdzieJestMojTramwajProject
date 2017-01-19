@@ -9,7 +9,7 @@ from lib.tornado_yieldperiodic.yieldperiodic import YieldPeriodicCallback
 class UpdateWorker(YieldPeriodicCallback):
     def __init__(self, trams_list):
         self.tramwaje = trams_list
-        YieldPeriodicCallback.__init__(self, self.run, 5000, faststart=True)
+        YieldPeriodicCallback.__init__(self, self.run, 3000, faststart=True)
 
     @coroutine
     def run(self):
