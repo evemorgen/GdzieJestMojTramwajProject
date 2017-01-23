@@ -2,6 +2,7 @@ from utils import Configimport requests
 import datetime
 import json
 import math
+import re
 
 class LimitFactors:
 	
@@ -16,8 +17,8 @@ class LimitFactors:
 	swietoPassengerSum = 459748
 	tramPopularity = 0.5
 	numberTramStops = 334
-	leftTopBoxCoordinates = '50.103093, 19.870580'
-	rightBottomBoxCoordinates = '50.011471, 20.029605'
+	leftTopBoxCoordinates = '50.103093,19.870580'
+	rightBottomBoxCoordinates = '50.011471,20.029605'
 
 	
 	def getCurrentWeather(self):
@@ -25,7 +26,7 @@ class LimitFactors:
 		self.currentWeather = r.json()
 
 	def getRequestingTrafficFlowData(self):
-		r = requests.get('https://traffic.cit.api.here.com/traffic/6.2/flow.json?quadkey=12020330&app_code='+LimitFactors.AppCode+'&app_id='+LimitFactors.AppIDAppCode+'&bbox='+LimitFactors.leftTopBoxCoordinates+';'+LimitFactors.rightBottomBoxCoordinates)
+		r = requests.get('https://traffic.cit.api.here.com/traffic/6.2/flow.json?&app_code='+LimitFactors.AppCode+'&app_id='+LimitFactors.AppID+'&bbox='+LimitFactors.leftTopBoxCoordinates+';'+LimitFactors.rightBottomBoxCoordinates)
 		self.currentTraffic = r.json()
 
 	def getForecast5days(self):
@@ -87,11 +88,26 @@ class LimitFactors:
 			self.timeDelayOnStop = 1.2*numberPeople
 
 	def trafficFlowFactor(self):
-		s
+		currentTrafficString = str(self.currentTraffic)
+		count = 0;
+		sum = 0;
+		for m in re.finditer('"JF":', currentTrafficString):
+			count = count+1
+			tmp = currentTrafficString[m.end()]
+			if currentTrafficString[m.end()] == '-':
+				tmp = '0'
+				count = count - 1
+			elif currentTrafficString[m.end()+1]=='.':
+				tmp = tmp+currentTrafficString[m.end()+1]+currentTrafficString[m.end()+2]
+			elif currentTrafficString[m.end()+1]=='0':
+				tmp = '10'
+			sum=sum+float(tmp)
+		self.averageJamfactor = 1-sum/(count*10)
 
 	def currentFactorImpacts(self):
 		self.getCurrentWeather()
-		return self.snowFactor()*self.crowdFactor()*self.tempFactor()
+		self.getRequestingTrafficFlowData()
+		return self.snowFactor()*self.crowdFactor()*self.tempFactor()*self.averageJamfactor
 
 
 
