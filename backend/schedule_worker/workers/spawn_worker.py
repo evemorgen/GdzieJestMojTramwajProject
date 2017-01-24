@@ -72,7 +72,7 @@ class SpawnWorker(YieldPeriodicCallback):
             for linia in linie:
                 czas = self.przystanki_db.get_terminal_time(linia, petla)
                 if czas is not None and czas != '{}':
-                    czas = json.loads(czas)['02']
+                    czas = json.loads(czas)['01']
                     if now_minute in (czas.get(now_hour) if czas.get(now_hour) is not None else {}):
                         logging.info('spawninig line: %s from %s', linia, petla)
                         tram = self.factorio.factory(linia, petla)

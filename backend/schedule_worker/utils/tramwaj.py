@@ -13,8 +13,11 @@ class Tramwaj:
         self.przystanki = Przystanki()
         self.line = line
         self.route = route
-        self.velocity = random.randint(19, 27)  # km/h
+        self.normal_velocity = random.randint(19, 27)
+        self.velocity = self.normal_velocity  # km/h
+        self.stop_time = 10
         self.state = "I'm going to the next stop"
+        self.delete_me = False
         self.last_stop = {
             'name': terminal,
             'x': float(self.przystanki.wszystkie[terminal]['x']),
@@ -47,7 +50,6 @@ class Tramwaj:
         i = 0
         while(distance > self.distance_to_go) and self.distance_to_go > 5 and i < 1000:
             i += 1
-            logging.info('x: %s, y: %s, distance: %s, distance to go: %s', x, a * x + b, distance, self.distance_to_go)
             distance = vincenty((x, a * x + b), (self.next_stop['x'], self.next_stop['y'])).meters
             if x - self.next_stop['x'] < 0:
                 x += 0.000050
@@ -55,6 +57,7 @@ class Tramwaj:
                 x -= 0.000050
         self.position['x'] = x
         self.position['y'] = a * x + b
+        logging.info('x: %s, y: %s, distance: %s, distance to go: %s', x, a * x + b, distance, self.distance_to_go)
 
     def calculate_next_stop(self):
         if self.route.index(self.last_stop['name']) != len(self.route) - 1:
@@ -67,9 +70,12 @@ class Tramwaj:
 
     def calculate_distance(self):
         if self.distance_to_go <= 0:
-            self.stop()
-            self.distance_to_go = self.przystanki.graph.get_edge_data(self.next_stop['name'], self.last_stop['name'])['odleglosc'] + self.distance_to_go
-            self.start()
+            if self.state == "Standing on stop":
+                if time.time() - self.stop_to_time > self.stop_time:
+                    self.distance_to_go = self.przystanki.graph.get_edge_data(self.next_stop['name'], self.last_stop['name'])['odleglosc'] + self.distance_to_go
+                    self.start()
+            else:
+                self.stop()
         else:
             self.distance_to_go = self.distance_to_go - (10 / 36) * self.velocity * (time.time() - self.last_update)
         self.calculate_position()
@@ -80,10 +86,14 @@ class Tramwaj:
         self.last_stop = self.next_stop
         self.calculate_next_stop()
         self.state = "Standing on stop"
+        self.stop_to_time = time.time()
 
     def start(self):
         self.velocity = random.randint(19, 27)
         self.state = "I'm going to the next stop"
+
+    def self_destruct(self):
+        self.delete_me = True
 
 
 class TramwajFactory:

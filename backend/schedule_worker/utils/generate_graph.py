@@ -20,7 +20,7 @@ def czy_skrzyzowanie(przystanek, skrzyzowania, wariant, punkty):
 def generate_graph():
     config = Config()
     dbapi = DbApi()
-    test = Przystanki()
+    #test = Przystanki()
     linie = [str(linia) for linia in config['lines']]
 
     logging.info(test.petle)
@@ -80,7 +80,7 @@ def generate_graph():
         first = (punkty[edge[0]]['x'], punkty[edge[0]]['y'])
         second = (punkty[edge[1]]['x'], punkty[edge[1]]['y'])
         logging.info('%s - %s: %s', edge[0], edge[1], vincenty(first, second).meters)
-        G.add_edge(edge[0], edge[1], linie=label, kolejka=deque(), odleglosc=vincenty(first, second).meters)
+        G.add_edge(edge[0], edge[1], linie=label, kolejka_L=deque(), kolejka_R=deque(), odleglosc=vincenty(first, second).meters)
     nx.draw_networkx_edges(G, pos)
     # nx.draw_networkx_edge_labels(G, pos)
 

@@ -6,7 +6,7 @@ from tornado.web import Application
 from tornado.ioloop import IOLoop
 
 from utils import Config, logging_config
-from workers import TimetableWorker, SpawnWorker, UpdateWorker
+from workers import TimetableWorker, SpawnWorker, UpdateWorker, DelayFactorWorker
 from handlers import HealthCheck, TTworker, GraphHandler
 
 
@@ -23,7 +23,8 @@ if __name__ == "__main__":
     logging.info("starting app")
     tt_worker = TimetableWorker()
     spawn_worker = SpawnWorker()
-    update_worker = UpdateWorker(spawn_worker.tramwaje)
+    delay_factor_worker = DelayFactorWorker()
+    update_worker = UpdateWorker(spawn_worker.tramwaje, delay_factor_worker)
     config = Config()
     app = make_app()
     app.listen(sys.argv[1])
