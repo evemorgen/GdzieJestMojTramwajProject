@@ -3,6 +3,7 @@ import logging
 import datetime
 import math
 import pprint
+import random
 
 from tornado.gen import coroutine
 from tornado.httpclient import AsyncHTTPClient
@@ -106,7 +107,7 @@ class DelayFactorWorker(YieldPeriodicCallback):
     def calculate_crowd_factor(self):
         now = datetime.datetime.now()
         if now.hour >= 24 and now.hour < 4:
-            number_of_people = 0.1
+            number_of_people = random.randint(2,5)
             self.stop_delay = number_of_people * (5.0 - 1.2 * math.log(number_of_people))
         else:
             h = now.hour
@@ -119,10 +120,9 @@ class DelayFactorWorker(YieldPeriodicCallback):
                 5: [self.weekend_percent, self.weekend_sum],
                 6: [self.holiday_percent, self.holiday_sum]
             }
-            logging.info(day_factor[now.weekday()][0][h - 5])
             number_of_people = (self.tram_popularity * day_factor[now.weekday()][0][h - 5] * day_factor[now.weekday()][1])
             number_of_people /= (100 * self.number_of_stops * 6)
-        if number_of_people <= 1:
+        if number_of_people <= 23:
             self.delay_on_stop = number_of_people * (5.0 - 1.2 * math.log(number_of_people))
         else:
             self.delay_on_stop = 1.2 * number_of_people * 10

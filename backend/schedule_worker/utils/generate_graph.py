@@ -23,7 +23,7 @@ def generate_graph():
     #test = Przystanki()
     linie = [str(linia) for linia in config['lines']]
 
-    logging.info(test.petle)
+    #logging.info(test.petle)
 
     dokladne_linie = {klucz: [] for klucz in linie}
     for linia in linie:

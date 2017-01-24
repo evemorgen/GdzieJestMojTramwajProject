@@ -71,6 +71,8 @@ class Tramwaj:
     def calculate_distance(self):
         if self.distance_to_go <= 0:
             if self.state == "Standing on stop":
+                logging.info(time.time() - self.stop_to_time)
+                logging.info(self.stop_time)
                 if time.time() - self.stop_to_time > self.stop_time:
                     self.distance_to_go = self.przystanki.graph.get_edge_data(self.next_stop['name'], self.last_stop['name'])['odleglosc'] + self.distance_to_go
                     self.start()
@@ -82,6 +84,7 @@ class Tramwaj:
         self.last_update = time.time()
 
     def stop(self):
+        logging.info('stopuje')
         self.velocity = 0
         self.last_stop = self.next_stop
         self.calculate_next_stop()
@@ -89,6 +92,7 @@ class Tramwaj:
         self.stop_to_time = time.time()
 
     def start(self):
+        logging.info('startuje')
         self.velocity = random.randint(19, 27)
         self.state = "I'm going to the next stop"
 
