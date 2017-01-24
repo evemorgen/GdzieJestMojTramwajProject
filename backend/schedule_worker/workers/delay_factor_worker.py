@@ -119,7 +119,8 @@ class DelayFactorWorker(YieldPeriodicCallback):
                 5: [self.weekend_percent, self.weekend_sum],
                 6: [self.holiday_percent, self.holiday_sum]
             }
-            number_of_people = (self.tram_popularity * day_factor[now.weekday()][0][h] * day_factor[now.weekday()][1])
+            logging.info(day_factor[now.weekday()][0][h - 5])
+            number_of_people = (self.tram_popularity * day_factor[now.weekday()][0][h - 5] * day_factor[now.weekday()][1])
             number_of_people /= (100 * self.number_of_stops * 6)
         if number_of_people <= 1:
             self.delay_on_stop = number_of_people * (5.0 - 1.2 * math.log(number_of_people))
