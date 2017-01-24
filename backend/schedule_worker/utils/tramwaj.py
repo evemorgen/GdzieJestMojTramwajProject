@@ -60,7 +60,7 @@ class Tramwaj:
         logging.info('x: %s, y: %s, distance: %s, distance to go: %s', x, a * x + b, distance, self.distance_to_go)
 
     def calculate_next_stop(self):
-        if self.route.index(self.last_stop['name']) != len(self.route) - 1:
+        if self.route.index(self.last_stop['name']) != len(self.route):
             next_stop_name = self.route[self.route.index(self.last_stop['name']) + 1]
             self.next_stop = {
                 'name': next_stop_name,
@@ -84,12 +84,37 @@ class Tramwaj:
         self.last_update = time.time()
 
     def stop(self):
-        logging.info('stopuje')
+        logging.info('linia %s staje na przystanku', self.line)
         self.velocity = 0
+        edge = self.przystanki.get_edge(self.last_stop['name'], self.next_stop['name'])
+        if edge[0] == self.last_stop:
+            queue = edge[2]['kolejka_L']
+            try:
+                queue.popleft()
+            except IndexError:
+                pass
+            self.przystanki.set_queue(self.last_stop['name'], self.next_stop['name'], 'kolejka_L', queue)
+        else:
+            queue = edge[2]['kolejka_R']
+            try:
+                queue.popleft()
+            except IndexError:
+                pass
+            self.przystanki.set_queue(self.last_stop['name'], self.next_stop['name'], 'kolejka_R', queue)
         self.last_stop = self.next_stop
         self.calculate_next_stop()
+        edge = self.przystanki.get_edge(self.last_stop['name'], self.next_stop['name'])
+        if edge[0] == self.last_stop:
+            queue = edge[2]['kolejka_L']
+            queue.append(self)
+            self.przystanki.set_queue(self.last_stop['name'], self.next_stop['name'], 'kolejka_L', queue)
+        else:
+            queue = edge[2]['kolejka_R']
+            queue.append(self)
+            self.przystanki.set_queue(self.last_stop['name'], self.next_stop['name'], 'kolejka_R', queue)
         self.state = "Standing on stop"
         self.stop_to_time = time.time()
+        logging.info(self.przystanki.get_edges(self.line))
 
     def start(self):
         logging.info('startuje')

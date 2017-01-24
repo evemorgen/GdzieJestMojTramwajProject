@@ -24,12 +24,23 @@ class Przystanki(metaclass=Singleton):
         self.wszystkie = {**self.petle, **self.skrzyzowania, **self.przystanki}
         logging.info('Przystanki initialised')
 
+    def get_edge(self, node1, node2):
+        edges = self.graph.edges(data=True)
+        for edge in edges:
+            if (edge[0] == node1 and edge[1] == node2) or (edge[0] == node2 and edge[1] == node1):
+                return edge
+
+    def set_queue(self, node1, node2, queue_name, queue):
+        self.graph[node1][node2][queue_name] = queue
+
     def get_edges(self, line=None):
         edges = self.graph.edges(data=True)
+        logging.info(edges)
         res = []
         for edge in edges:
             coords = [{'latitude': self.wszystkie[edge[0]]['x'], 'longitude': self.wszystkie[edge[0]]['y']},
-                      {'latitude': self.wszystkie[edge[1]]['x'], 'longitude': self.wszystkie[edge[1]]['y']}]
+                      {'latitude': self.wszystkie[edge[1]]['x'], 'longitude': self.wszystkie[edge[1]]['y']},
+                     ]
             if line is not None:
                 if str(line) not in edge[2]['linie']:
                     continue

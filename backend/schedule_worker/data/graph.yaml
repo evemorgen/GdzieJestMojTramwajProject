@@ -2,181 +2,245 @@
 adj: &id177
   AWF:
     Muzeum Lotnictwa: &id035
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
       odleglosc: 438.98491056489445
     Stella-Sawickiego: &id113
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
       odleglosc: 572.6224490851096
   "Agencja Krak\xF3w Wsch\xF3d":
     Blokowa: &id001
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '22']
-      odleglosc: 470.74405791067613
+      odleglosc: 470.74405791080864
     Walcownia: &id149
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '22']
       odleglosc: 486.9758083143734
   Balicka Wiadukt:
     "Bronowice Ma\u0142e": &id004
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '24', '64']
       odleglosc: 652.6672925613958
     Wesele: &id153
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '24', '64']
-      odleglosc: 524.6502245586676
+      odleglosc: 524.6502245587745
   Bardosa:
     Brama nr 4: &id003
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
-      odleglosc: 803.9458197638204
+      odleglosc: 803.9458197639325
     Kopiec Wandy: &id021
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12']
-      odleglosc: 283.4096314678559
+      odleglosc: 283.4096314677954
     Suche Stawy: &id120
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10', '12']
       odleglosc: 375.0680105583304
   Batorego:
     "Plac Inwalid\xF3w": &id053
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 316.0855350104355
+      odleglosc: 316.0855350102188
     Teatr Bagatela: &id132
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
       odleglosc: 464.87721062887863
   "Bia\u0142ucha":
     "Cysters\xF3w": &id006
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
-      odleglosc: 529.1233154620564
+      odleglosc: 529.1233154620975
     "TAURON Arena Krak\xF3w Wieczysta": &id130
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
-      odleglosc: 575.6603252596583
+      odleglosc: 575.6603252599446
   "Bie\u0144czycka":
     "Rondo Czy\u017Cy\u0144skie": &id070
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5', '9', '14', '52', '64']
-      odleglosc: 364.8143855793692
+      odleglosc: 364.81438557928124
     Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id077
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5', '9', '14', '52', '64']
-      odleglosc: 621.5062062202721
+      odleglosc: 621.5062062200858
   "Bie\u017Canowska":
     Dauna: &id008
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '24', '50']
-      odleglosc: 585.5061953633048
+      odleglosc: 585.5061953634074
     Kabel: &id017
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '6', '9', '13', '23', '24', '50', '69']
       odleglosc: 401.38462869833177
     Wlotowa: &id160
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
       odleglosc: 814.1526086073683
   Biprostal:
     Uniwersytet Pedagogiczny: &id145
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 397.5547070605631
+      odleglosc: 397.55470706061607
     "Urz\u0119dnicza": &id147
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 312.21969513597264
+      odleglosc: 312.2196951360072
   Blokowa:
     "Agencja Krak\xF3w Wsch\xF3d": *id001
     Mrozowa: &id033
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '22']
-      odleglosc: 236.44211695441288
+      odleglosc: 236.44211695432017
   "Borek Fa\u0142\u0119cki":
     "Borek Fa\u0142\u0119cki I": &id002
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
       odleglosc: 210.69557383568647
   "Borek Fa\u0142\u0119cki I":
     "Borek Fa\u0142\u0119cki": *id002
     Solvay: &id106
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
-      odleglosc: 218.1088124020113
+      odleglosc: 218.10881240199518
   Borsucza:
     "Bro\u017Cka": &id005
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '12', '22', '23']
-      odleglosc: 162.1461860348303
+      odleglosc: 162.14618603482995
     "Skrzy\u017Cowanie Grota": &id097
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '12', '22', '23']
       odleglosc: 203.79090862075125
   Brama nr 4:
     Bardosa: *id003
     "Je\u017Cynowa": &id014
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
-      odleglosc: 707.6364646226143
+      odleglosc: 707.6364646226148
   Brama nr 5:
     "Je\u017Cynowa": &id015
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
-      odleglosc: 739.9516472359353
+      odleglosc: 739.9516472360857
     Meksyk: &id030
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
       odleglosc: 176.81562045603698
   "Bratys\u0142awska":
     "Krowodrza G\xF3rka": &id022
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '5', '18', '50', '69']
       odleglosc: 553.2363171916531
     Szpital Narutowicza: &id122
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '5', '18', '50', '69']
       odleglosc: 459.1726369852896
   Bronowice:
     "G\u0142owackiego": &id012
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 344.48794270183555
+      odleglosc: 344.4879427017456
     Wesele: &id154
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '24', '64']
       odleglosc: 349.3904312745017
@@ -185,336 +249,454 @@ adj: &id177
   "Bro\u017Cka":
     Borsucza: *id005
     "\u0141agiewniki": &id169
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '12', '22', '23']
       odleglosc: 362.747924853056
   Centralna:
     Rondo 308. Dywizjonu: &id068
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
-      odleglosc: 583.515654742125
+      odleglosc: 583.5156547420409
     "Rondo Czy\u017Cy\u0144skie": &id071
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
-      odleglosc: 571.1584706697887
+      odleglosc: 571.1584706701858
   Centrum Kongresowe ICE:
     Orzeszkowej: &id041
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
       odleglosc: 575.1919973606678
     Szwedzka: &id124
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
       odleglosc: 454.5678543420392
   Chmieleniec:
     Czerwone Maki P+R: &id007
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
       odleglosc: 667.6095544989164
     Kampus UJ: &id018
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
-      odleglosc: 489.62394078959113
+      odleglosc: 489.6239407894121
   "Cichy K\u0105cik":
     Reymana: &id066
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
-      odleglosc: 556.0687114585197
+      odleglosc: 556.0687114584085
   Cienista:
     Teatr Ludowy: &id135
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5']
       odleglosc: 534.8559419360122
     "Wa\u0144kowicza": &id152
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5']
-      odleglosc: 696.1766811203072
+      odleglosc: 696.1766811203032
   "Cmentarz Podg\xF3rski":
     Dworcowa: &id009
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '6', '11', '13', '23', '24', '69']
-      odleglosc: 841.1793788532456
+      odleglosc: 841.179378853083
     "Powsta\u0144c\xF3w Wielkopolskich": &id060
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '6', '11', '13', '23', '24', '69']
       odleglosc: 373.28338985331936
   Cmentarz Rakowicki:
     Cmentarz Rakowicki:
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '2']
       odleglosc: 0.0
     Rakowicka: &id065
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2']
       odleglosc: 356.4781509851562
   Cracovia:
     Oleandry: &id040
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
-      odleglosc: 306.7041356381546
+      odleglosc: 306.7041356381777
     "Uniwersytet Jagiello\u0144ski": &id143
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
       odleglosc: 461.68824864115527
   "Cysters\xF3w":
     "Bia\u0142ucha": *id006
     Rondo Mogilskie: &id080
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
-      odleglosc: 791.3482171094524
+      odleglosc: 791.3482171094777
   Czerwone Maki P+R:
     Chmieleniec: *id007
   "Czy\u017Cyny":
     "Rondo Czy\u017Cy\u0144skie": &id072
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
-      odleglosc: 396.2852805897483
+      odleglosc: 396.28528058978117
     Stella-Sawickiego: &id114
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
-      odleglosc: 527.8836452581166
+      odleglosc: 527.8836452580939
   DH Wanda:
     Rondo Hipokratesa: &id075
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14', '21', '52', '64']
       odleglosc: 632.2268923018589
     Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id078
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14', '21', '52', '64']
       odleglosc: 718.7786811455799
   Darwina:
     "Jarz\u0119biny": &id013
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '4', '5']
-      odleglosc: 205.20639730704815
+      odleglosc: 205.2063973070902
     Wiadukty: &id155
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '4', '5']
       odleglosc: 317.73281065721153
   Dauna:
     "Bie\u017Canowska": *id008
     Piaski Nowe: &id045
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '24', '50']
-      odleglosc: 547.2980460992068
+      odleglosc: 547.2980460992793
   Dunikowskiego:
     Kleeberga: &id019
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '52', '64']
       odleglosc: 384.07181171396894
     Rondo Hipokratesa: &id076
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14', '21', '52', '64']
-      odleglosc: 514.3084720440247
+      odleglosc: 514.3084720439759
     Rondo Piastowskie: &id084
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14']
       odleglosc: 348.9501269085841
   Dworcowa:
     "Cmentarz Podg\xF3rski": *id009
     "Skrzy\u017Cowanie Dworcowa": &id092
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '6', '11', '13', '23', '24', '69']
       odleglosc: 241.9006809316885
   "Dworzec G\u0142\xF3wny":
     "Dworzec G\u0142\xF3wny Zach\xF3d": &id010
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '69']
-      odleglosc: 432.73192665751566
+      odleglosc: 432.73192665736076
     Lubicz: &id029
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '4', '7', '10', '14', '20', '52', '62', '64']
-      odleglosc: 447.6926003249183
+      odleglosc: 447.6926003249658
     "Poczta G\u0142\xF3wna": &id058
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '10', '20', '24', '52', '62']
       odleglosc: 626.6471557727351
     Stary Kleparz: &id111
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '4', '7', '14', '24', '64', '69']
       odleglosc: 485.6467399602502
   "Dworzec G\u0142\xF3wny Tunel":
     Rondo Mogilskie: &id081
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['5', '19', '50']
-      odleglosc: 983.7264702591164
+      odleglosc: 983.7264702590918
     "Skrzy\u017Cowanie Polibuda": &id100
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['5', '19', '50']
       odleglosc: 581.3016415430116
   "Dworzec G\u0142\xF3wny Zach\xF3d":
     "Dworzec G\u0142\xF3wny": *id010
     Politechnika: &id059
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '69']
       odleglosc: 250.32866285502126
   "Dworzec P\u0142asz\xF3w Estakada":
     Lipska: &id027
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '11', '50']
       odleglosc: 788.0720937652083
     "Skrzy\u017Cowanie Dworcowa": &id093
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '11', '50']
       odleglosc: 520.6255816163085
   Dworzec Towarowy:
     Nowy Kleparz: &id037
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['7', '18']
       odleglosc: 371.4015044138422
     "Skrzy\u017Cowanie Polibuda": &id101
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '5', '19', '50', '69']
       odleglosc: 384.38649942770775
     Szpital Narutowicza: &id123
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '5', '18', '50', '69']
-      odleglosc: 597.2823245667892
+      odleglosc: 597.2823245671983
   "D\u0105bie":
     "D\u0105bie":
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['7', '7']
       odleglosc: 0.0
     "Ofiar D\u0105bia": &id038
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
       odleglosc: 258.3074078016752
     Plaza: &id056
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
       odleglosc: 418.04519110759145
   "Elektromonta\u017C":
     Wiadukty: &id156
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4']
-      odleglosc: 509.3704087146088
+      odleglosc: 509.3704087146217
     Zajezdnia Nowa Huta: &id165
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4']
       odleglosc: 521.8194683029836
   Fabryczna:
     Francesco Nullo: &id011
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '7', '12', '14', '22', '62']
-      odleglosc: 250.95812054407375
+      odleglosc: 250.95812054404405
     "Ofiar D\u0105bia": &id039
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '7', '12', '14', '22', '62']
-      odleglosc: 403.3988520189949
+      odleglosc: 403.398852018934
   Filharmonia:
     Jubilat: &id016
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '2', '6']
-      odleglosc: 593.9762499744172
+      odleglosc: 593.9762499743614
     "Plac Wszystkich \u015Awi\u0119tych": &id055
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '6', '8', '13', '18', '20', '69']
       odleglosc: 336.0930501349222
     "Skrzy\u017Cowanie UJ": &id103
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '8', '13', '18', '20', '69']
       odleglosc: 179.30119861356138
   Francesco Nullo:
     Fabryczna: *id011
     "Teatr Vari\xE9t\xE9": &id137
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '7', '12', '14', '22', '62']
       odleglosc: 377.1779277937677
   Gromadzka:
     "Kukli\u0144skiego": &id023
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '20', '50']
       odleglosc: 557.2302821624103
     Lipska: &id028
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '20', '50']
-      odleglosc: 352.16090430282776
+      odleglosc: 352.1609043028276
   Grota-Roweckiego:
     "Lipi\u0144skiego": &id026
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
-      odleglosc: 330.7274321440388
+      odleglosc: 330.72743214404835
     Norymberska: &id036
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
-      odleglosc: 599.7894168052194
+      odleglosc: 599.7894168052939
   "G\u0142owackiego":
     Bronowice: *id012
     Uniwersytet Pedagogiczny: &id146
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 408.02290420118555
+      odleglosc: 408.0229042012336
   Hala Targowa:
     "Rondo Grzeg\xF3rzeckie": &id074
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '19', '22']
       odleglosc: 762.6324567661217
     "Starowi\u015Blna": &id108
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '19', '22']
       odleglosc: 317.88645716548393
   "Jarz\u0119biny":
     Darwina: *id013
     "Wzg\xF3rza Krzes\u0142awickie": &id162
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '4', '5']
       odleglosc: 442.5792065173936
@@ -524,106 +706,142 @@ adj: &id177
   Jubilat:
     Filharmonia: *id016
     Komorowskiego: &id020
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '2', '6']
-      odleglosc: 452.46280245570256
+      odleglosc: 452.4628024558484
   Kabel:
     "Bie\u017Canowska": *id017
     "Skrzy\u017Cowanie Dworcowa": &id094
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '6', '9', '13', '23', '24', '50', '69']
       odleglosc: 592.4652904831663
   Kampus UJ:
     Chmieleniec: *id018
     Ruczaj: &id086
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
-      odleglosc: 431.9375341405582
+      odleglosc: 431.93753414080754
   Kapelanka:
     Szwedzka: &id125
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
       odleglosc: 290.96766628067564
     "S\u0142omiana": &id126
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
-      odleglosc: 493.98998033398294
+      odleglosc: 493.9899803336832
   Klasztorna:
     Os.Na Skarpie: &id042
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10', '12']
-      odleglosc: 502.5517905105611
+      odleglosc: 502.551790510561
     Suche Stawy: &id121
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10', '12']
       odleglosc: 501.75174800460655
   Kleeberga:
     Dunikowskiego: *id019
     "Piasta Ko\u0142odzieja": &id047
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '52', '64']
       odleglosc: 347.8920179107648
   Klimeckiego:
     "Kukli\u0144skiego": &id024
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '20', '50']
       odleglosc: 645.5389100579138
     "Zab\u0142ocie": &id163
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '20', '50']
       odleglosc: 187.37303694709323
   "Kobierzy\u0144ska":
     "Skrzy\u017Cowanie Grota": &id098
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
       odleglosc: 451.2826678784141
     "S\u0142omiana": &id127
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
-      odleglosc: 717.9020306252631
+      odleglosc: 717.902030625252
   Koksochemia:
     Meksyk: &id031
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
       odleglosc: 746.7102985805341
     "Plesz\xF3w": &id057
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10']
-      odleglosc: 925.7960478778248
+      odleglosc: 925.7960478778164
   Kombinat:
     Mrozowa: &id034
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '22']
-      odleglosc: 689.7112559846955
+      odleglosc: 689.7112559847463
     Struga: &id118
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '21', '22']
       odleglosc: 1739.7274196201208
     Zajezdnia Nowa Huta: &id166
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4']
       odleglosc: 430.4861494699521
   Komorowskiego:
     Jubilat: *id020
     Salwator: &id091
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '2', '6']
       odleglosc: 503.44781831201703
@@ -631,25 +849,33 @@ adj: &id177
     Bardosa: *id021
   Korona:
     Limanowskiego: &id025
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '11', '13', '23']
-      odleglosc: 619.106912043818
+      odleglosc: 619.1069120437563
     "Plac Bohater\xF3w Getta": &id049
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['19']
       odleglosc: 655.6249654744222
     Plac Wolnica: &id054
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '8', '10', '13']
       odleglosc: 540.5830889531932
     Smolki: &id104
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '10', '11', '19', '23']
-      odleglosc: 375.1366462360939
+      odleglosc: 375.1366462358091
   "Krowodrza G\xF3rka":
     "Bratys\u0142awska": *id022
   "Kukli\u0144skiego":
@@ -657,21 +883,27 @@ adj: &id177
     Klimeckiego: *id024
   "Kurdwan\xF3w":
     Witosa: &id158
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '24', '50']
-      odleglosc: 503.6655043937841
+      odleglosc: 503.6655043937943
   Limanowskiego:
     Korona: *id025
     "Powsta\u0144c\xF3w Wielkopolskich": &id061
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '11', '13', '23']
-      odleglosc: 518.7337043921772
+      odleglosc: 518.7337043919605
   "Lipi\u0144skiego":
     Grota-Roweckiego: *id026
     "Skrzy\u017Cowanie Grota": &id099
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
       odleglosc: 90.56621793402442
@@ -679,36 +911,48 @@ adj: &id177
     "Dworzec P\u0142asz\xF3w Estakada": *id027
     Gromadzka: *id028
     Rzebika: &id088
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '20']
-      odleglosc: 613.9696125768871
+      odleglosc: 613.9696125768926
   Lubicz:
     "Dworzec G\u0142\xF3wny": *id029
     Rondo Mogilskie: &id082
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '7', '10', '14', '20', '52', '62', '64']
-      odleglosc: 562.4036522246256
+      odleglosc: 562.4036522245835
     Uniwersytet Ekonomiczny: &id141
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2']
       odleglosc: 322.776412924399
   M1 Al. Pokoju:
     Rondo 308. Dywizjonu: &id069
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
-      odleglosc: 621.2830194243062
+      odleglosc: 621.2830194243214
     "TAURON Arena Krak\xF3w Al. Pokoju": &id128
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
-      odleglosc: 535.5834289816804
+      odleglosc: 535.5834289816888
   "Ma\u0142y P\u0142asz\xF3w":
     Rzebika: &id089
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '20']
       odleglosc: 676.0235410047306
@@ -717,77 +961,101 @@ adj: &id177
     Koksochemia: *id031
   Miodowa:
     "Starowi\u015Blna": &id109
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '19', '24', '69']
       odleglosc: 392.01593776154647
     "\u015Aw.Wawrzy\u0144ca": &id175
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '19', '24', '69']
-      odleglosc: 334.5065621529362
+      odleglosc: 334.506562152776
   Mistrzejowice:
     "Mi\u015Bnie\u0144ska": &id032
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14']
-      odleglosc: 307.6615675691633
+      odleglosc: 307.66156756920407
   "Mi\u015Bnie\u0144ska":
     Mistrzejowice: *id032
     "Os.Z\u0142otego Wieku": &id043
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14']
-      odleglosc: 361.4891009975699
+      odleglosc: 361.4891009974728
   Mrozowa:
     Blokowa: *id033
     Kombinat: *id034
   Muzeum Lotnictwa:
     AWF: *id035
     "TAURON Arena Krak\xF3w Wieczysta": &id131
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '5', '9', '10', '52', '64']
       odleglosc: 573.7421049955477
   Norymberska:
     Grota-Roweckiego: *id036
     Ruczaj: &id087
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '18', '23', '52', '62']
-      odleglosc: 586.3014412047934
+      odleglosc: 586.301441204815
   "Nowos\u0105decka":
     Piaski Nowe: &id046
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '24', '50']
-      odleglosc: 512.7124952837587
+      odleglosc: 512.7124952837812
     Witosa: &id159
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '24', '50']
       odleglosc: 689.1853893129248
   "Nowy Bie\u017Can\xF3w":
     "\u0106wikli\u0144skiej": &id167
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
       odleglosc: 346.5459988932809
   Nowy Kleparz:
     Dworzec Towarowy: *id037
     "P\u0119dzich\xF3w": &id064
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['7', '18']
-      odleglosc: 457.75996488022463
+      odleglosc: 457.7599648802916
   Nowy Prokocim:
     Teligi: &id139
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
-      odleglosc: 376.8871970187407
+      odleglosc: 376.88719701871656
     "\u0106wikli\u0144skiej": &id168
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
       odleglosc: 441.3863949249835
@@ -797,66 +1065,86 @@ adj: &id177
   Oleandry:
     Cracovia: *id040
     Park Jordana: &id044
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
-      odleglosc: 214.30396734072465
+      odleglosc: 214.3039673406958
   Orzeszkowej:
     Centrum Kongresowe ICE: *id041
     Stradom: &id115
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '18', '22', '52', '62']
-      odleglosc: 262.04480830097066
+      odleglosc: 262.0448083010372
   Os.Kolorowe:
     Plac Centralny im. R.Reagana: &id050
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '10', '12', '22', '62']
       odleglosc: 580.2734892253704
     "Rondo Czy\u017Cy\u0144skie": &id073
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '10', '12', '22', '62']
-      odleglosc: 849.7757978006877
+      odleglosc: 849.7757978006642
   Os.Na Skarpie:
     Klasztorna: *id042
     Plac Centralny im. R.Reagana: &id051
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['10', '12']
       odleglosc: 662.9983071640552
   "Os.Piast\xF3w":
     "Piasta Ko\u0142odzieja": &id048
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21', '52', '64']
-      odleglosc: 404.65196222724427
+      odleglosc: 404.6519622268612
   Os.Zgody:
     Plac Centralny im. R.Reagana: &id052
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21']
-      odleglosc: 677.174923240455
+      odleglosc: 677.1749232403271
     Rondo Kocmyrzowskie im. Ks. Gorzelanego: &id079
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['21']
-      odleglosc: 423.4427442056463
+      odleglosc: 423.4427442058799
   "Os.Z\u0142otego Wieku":
     "Mi\u015Bnie\u0144ska": *id043
     Rondo Piastowskie: &id085
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '14']
       odleglosc: 473.3532383119724
   Park Jordana:
     Oleandry: *id044
     Reymana: &id067
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
-      odleglosc: 514.7104937390225
+      odleglosc: 514.710493739046
   Piaski Nowe:
     Dauna: *id045
     "Nowos\u0105decka": *id046
@@ -866,70 +1154,90 @@ adj: &id177
   "Plac Bohater\xF3w Getta":
     Korona: *id049
     "Powsta\u0144c\xF3w Wielkopolskich": &id062
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '24', '69']
-      odleglosc: 673.032389271959
+      odleglosc: 673.0323892716655
     "\u015Aw.Wawrzy\u0144ca": &id176
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '19', '24', '69']
-      odleglosc: 563.7839758807349
+      odleglosc: 563.783975880658
   Plac Centralny im. R.Reagana:
     Os.Kolorowe: *id050
     Os.Na Skarpie: *id051
     Os.Zgody: *id052
     Struga: &id119
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '21', '22']
-      odleglosc: 442.3414752933234
+      odleglosc: 442.3414752933186
   "Plac Inwalid\xF3w":
     Batorego: *id053
     "Urz\u0119dnicza": &id148
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['4', '8', '13', '14', '24', '64']
-      odleglosc: 579.0664551969566
+      odleglosc: 579.0664551969352
   Plac Wolnica:
     Korona: *id054
     Stradom: &id116
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '8', '10', '13']
-      odleglosc: 427.3306898855003
+      odleglosc: 427.3306898857142
   "Plac Wszystkich \u015Awi\u0119tych":
     Filharmonia: *id055
     "Skrzy\u017Cowanie Gertrudy": &id095
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '6', '8', '13', '18', '20', '69']
       odleglosc: 231.18498381921654
   Plaza:
     "D\u0105bie": *id056
     "TAURON Arena Krak\xF3w Al. Pokoju": &id129
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '12', '14', '22', '62']
-      odleglosc: 425.5420704601915
+      odleglosc: 425.54207046028927
   "Plesz\xF3w":
     Koksochemia: *id057
   "Poczta G\u0142\xF3wna":
     "Dworzec G\u0142\xF3wny": *id058
     "Skrzy\u017Cowanie Gertrudy": &id096
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '10', '20', '69']
       odleglosc: 97.3061353956206
     "Starowi\u015Blna": &id110
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '3', '24', '52', '62', '69']
       odleglosc: 400.715672717888
   Politechnika:
     "Dworzec G\u0142\xF3wny Zach\xF3d": *id059
     "Skrzy\u017Cowanie Polibuda": &id102
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '5', '5', '19', '19', '50', '50', '69']
       odleglosc: 340.7327018582076
@@ -939,36 +1247,46 @@ adj: &id177
     "Plac Bohater\xF3w Getta": *id062
   Prokocim:
     Prokocim Szpital: &id063
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
       odleglosc: 720.3979058926151
     Wlotowa: &id161
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
-      odleglosc: 249.25466357314744
+      odleglosc: 249.25466357325598
   Prokocim Szpital:
     Prokocim: *id063
     Teligi: &id140
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['3', '9', '13', '23', '69']
       odleglosc: 616.3924876848156
   "P\u0119dzich\xF3w":
     Nowy Kleparz: *id064
     Stary Kleparz: &id112
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['7', '18']
       odleglosc: 368.1945500245848
   Rakowicka:
     Cmentarz Rakowicki: *id065
     Uniwersytet Ekonomiczny: &id142
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2']
-      odleglosc: 410.70681755104874
+      odleglosc: 410.70681755089606
   Reymana:
     "Cichy K\u0105cik": *id066
     Park Jordana: *id067
@@ -983,17 +1301,23 @@ adj: &id177
   "Rondo Grzeg\xF3rzeckie":
     Hala Targowa: *id074
     Rondo Mogilskie: &id083
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['7', '9', '14', '19', '20', '50', '62']
       odleglosc: 927.3556373493054
     "Teatr Vari\xE9t\xE9": &id138
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '7', '12', '14', '22', '62']
       odleglosc: 280.01303133827406
     "Zab\u0142ocie": &id164
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['9', '20', '50']
       odleglosc: 987.6868674102147
@@ -1005,18 +1329,24 @@ adj: &id177
     DH Wanda: *id078
     Os.Zgody: *id079
     Teatr Ludowy: &id136
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5']
       odleglosc: 455.54102562710403
   Rondo Matecznego:
     "Rzemie\u015Blnicza": &id090
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '10', '11', '19', '23']
-      odleglosc: 373.96228908127813
+      odleglosc: 373.9622890812052
     Smolki: &id105
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '10', '11', '19', '23']
       odleglosc: 606.5324434196089
@@ -1037,30 +1367,40 @@ adj: &id177
   "Rzemie\u015Blnicza":
     Rondo Matecznego: *id090
     "\u0141agiewniki": &id170
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '10', '19']
       odleglosc: 432.56609908108203
   Salwator:
     Komorowskiego: *id091
     Salwator:
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '1', '1', '2', '2', '2', '6', '6', '6']
       odleglosc: 0.0
   "Sanktuarium Bo\u017Cego Mi\u0142osierdzia":
     Solvay: &id107
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
-      odleglosc: 732.9379545841321
+      odleglosc: 732.9379545840296
     "\u0141agiewniki": &id171
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
       odleglosc: 835.787423699105
     "\u0141agiewniki ZUS": &id172
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
       odleglosc: 286.05983386999475
@@ -1072,12 +1412,16 @@ adj: &id177
     "Plac Wszystkich \u015Awi\u0119tych": *id095
     "Poczta G\u0142\xF3wna": *id096
     Wawel: &id150
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '8', '10', '13', '18']
       odleglosc: 539.988349028303
     "\u015Aw.Gertrudy": &id174
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '6', '8', '8', '10', '13', '13', '18', '18']
       odleglosc: 1.4504473277125212
@@ -1092,12 +1436,16 @@ adj: &id177
   "Skrzy\u017Cowanie UJ":
     Filharmonia: *id103
     Teatr Bagatela: &id133
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '8', '13', '18', '69']
       odleglosc: 330.6806147331774
     "Uniwersytet Jagiello\u0144ski": &id144
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['20']
       odleglosc: 83.4840991221181
@@ -1112,15 +1460,19 @@ adj: &id177
     Miodowa: *id109
     "Poczta G\u0142\xF3wna": *id110
     Stradom: &id117
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['12', '22', '52', '62']
-      odleglosc: 595.6607552237773
+      odleglosc: 595.6607552238318
   Stary Kleparz:
     "Dworzec G\u0142\xF3wny": *id111
     "P\u0119dzich\xF3w": *id112
     Teatr Bagatela: &id134
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['2', '4', '14', '18', '24', '64', '69']
       odleglosc: 538.5358114070182
@@ -1132,7 +1484,9 @@ adj: &id177
     Plac Wolnica: *id116
     "Starowi\u015Blna": *id117
     Wawel: &id151
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['6', '8', '10', '13', '18']
       odleglosc: 324.3694731945728
@@ -1190,7 +1544,9 @@ adj: &id177
   "Wa\u0144kowicza":
     Cienista: *id152
     Wiadukty: &id157
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['1', '5']
       odleglosc: 699.3541778173694
@@ -1223,12 +1579,16 @@ adj: &id177
     "Rzemie\u015Blnicza": *id170
     "Sanktuarium Bo\u017Cego Mi\u0142osierdzia": *id171
     "\u0141agiewniki":
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['11', '11', '11', '11', '23', '23', '23', '23']
       odleglosc: 0.0
     "\u0141agiewniki ZUS": &id173
-      kolejka: !!python/object/apply:collections.deque
+      kolejka_L: !!python/object/apply:collections.deque
+      - []
+      kolejka_R: !!python/object/apply:collections.deque
       - []
       linie: ['8', '19', '22']
       odleglosc: 549.9095627813896

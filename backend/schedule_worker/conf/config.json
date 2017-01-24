@@ -22,7 +22,7 @@
     "weekday_sum": 1087189,
     "weekend_sum": 680431,
     "holiday_sum": 459748,
-    "tram_popularity": 1,
+    "tram_popularity": 0.5,
     "stops_number": 334,
     "rain_weight": 0.2,
     "snow_weight": 0.2,
