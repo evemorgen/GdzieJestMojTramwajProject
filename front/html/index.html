@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pl" ng-app="projectMiss">
 
 <head>
     <meta charset="utf-8">
@@ -15,7 +16,20 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Angular 1.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="../app/vendor/lodash.js"></script>
+    <script src="../app/vendor/angular-simple-logger.js"></script>
+    <script src="../app/vendor/angular-google-maps.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script type="text/javascript" src="../app/app.js"></script>
+    <script type="text/javascript" src="../app/controllers/check.js"></script>
+    <script type="text/javascript" src="../app/controllers/googlemaps.js"></script>
+    <script type="text/javascript" src="../app/js/script.js"></script>
+
+
 
     <title>GdzieJestMojTramwajProject</title>
 </head>
@@ -35,6 +49,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="">Home</a></li>
+                        <li><a href="symulacja.html">Symulacja</a></li>
                         <li><a href="mapa.html">Mapa</a></li>
                         <li><a href="about.html">O nas</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
@@ -45,6 +60,27 @@
 
         <div class="container">
         </div>
+        <div class="container" ng-controller="backendTests">
+            <div>
+                <h3>Healthcheck</h3>
+                <button ng-click="healthcheck()">Check backend response</button>                {{healthcheckResult.status}} {{healthcheckResult.number}}
+            </div>
+            <div>
+                <input type="text" ng-model="logsAmount" />
+                <button ng-click="getstatus(logsAmount)">Get status</button>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Log</th>
+                    </tr>
+                    <tr ng-repeat="log in logs">
+                        <td>{{ log[0] }}</td>
+                        <td>{{ log[1] }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
         <footer>
         </footer>
