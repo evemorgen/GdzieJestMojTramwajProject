@@ -1,0 +1,1319 @@
+{
+    "Nowy Bie\u017can\u00f3w": {
+        "przystanek": false,
+        "y": " 20.023676",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.015500"
+    },
+    "Uniwersytet Ekonomiczny": {
+        "przystanek": true,
+        "y": " 19.952389",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.067971"
+    },
+    "Urz\u0119dnicza": {
+        "przystanek": true,
+        "y": " 19.919615",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.071893"
+    },
+    "Os.Na Skarpie": {
+        "przystanek": true,
+        "y": " 20.045817",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069753"
+    },
+    "Sanktuarium Bo\u017cego Mi\u0142osierdzia": {
+        "przystanek": true,
+        "y": " 19.932805",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.022486"
+    },
+    "Lubicz": {
+        "przystanek": true,
+        "y": " 19.951635",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.065110"
+    },
+    "Biprostal": {
+        "przystanek": true,
+        "y": " 19.915592",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.072977"
+    },
+    "Plesz\u00f3w": {
+        "przystanek": false,
+        "y": " 20.117364",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.072851"
+    },
+    "Wa\u0144kowicza": {
+        "przystanek": true,
+        "y": " 20.047483",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.086925"
+    },
+    "Stella-Sawickiego": {
+        "przystanek": true,
+        "y": " 20.004620",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.074298"
+    },
+    "Brama nr 5": {
+        "przystanek": true,
+        "y": " 20.092155",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069602"
+    },
+    "Bie\u017canowska": {
+        "przystanek": true,
+        "y": " 19.979243",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.023546"
+    },
+    "Wzg\u00f3rza Krzes\u0142awickie": {
+        "przystanek": false,
+        "x": "50.095070",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "y": " 20.065670"
+    },
+    "Cienista": {
+        "przystanek": true,
+        "y": " 20.038143",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.085176"
+    },
+    "Piaski Nowe": {
+        "przystanek": true,
+        "y": " 19.971453",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.015446"
+    },
+    "Kopiec Wandy": {
+        "przystanek": true,
+        "y": " 20.066850",
+        "on_demand": true,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.069825"
+    },
+    "Plaza": {
+        "przystanek": true,
+        "y": " 19.984035",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.063070"
+    },
+    "Suche Stawy": {
+        "przystanek": true,
+        "y": " 20.059390",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.067478"
+    },
+    "Komorowskiego": {
+        "przystanek": true,
+        "y": " 19.921807",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.053389"
+    },
+    "Piasta Ko\u0142odzieja": {
+        "przystanek": true,
+        "y": " 20.013086",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.098724"
+    },
+    "Dunikowskiego": {
+        "przystanek": true,
+        "y": " 20.015383",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.092622"
+    },
+    "Brama nr 4": {
+        "przystanek": true,
+        "y": " 20.074978",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.064939"
+    },
+    "Uniwersytet Jagiello\u0144ski": {
+        "przystanek": true,
+        "y": " 19.931238",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.060327"
+    },
+    "Bie\u0144czycka": {
+        "przystanek": true,
+        "y": " 20.020888",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.075880"
+    },
+    "\u0141agiewniki ZUS": {
+        "przystanek": true,
+        "y": " 19.934085",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.024922"
+    },
+    "Nowos\u0105decka": {
+        "przystanek": true,
+        "y": " 19.964949",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.013527"
+    },
+    "Dworzec G\u0142\u00f3wny": {
+        "przystanek": true,
+        "y": " 19.945409",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.064738"
+    },
+    "Bro\u017cka": {
+        "przystanek": true,
+        "y": " 19.931328",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.030500"
+    },
+    "S\u0142omiana": {
+        "przystanek": true,
+        "y": " 19.924273",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.041174"
+    },
+    "Os.Zgody": {
+        "przystanek": true,
+        "y": " 20.031146",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.076701"
+    },
+    "Kobierzy\u0144ska": {
+        "przystanek": true,
+        "y": " 19.925961",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.034812"
+    },
+    "Szpital Narutowicza": {
+        "przystanek": true,
+        "y": " 19.937413",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.080825"
+    },
+    "Fabryczna": {
+        "przystanek": true,
+        "y": " 19.970764",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.060342"
+    },
+    "Reymana": {
+        "przystanek": true,
+        "y": " 19.910796",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.061313"
+    },
+    "Agencja Krak\u00f3w Wsch\u00f3d": {
+        "przystanek": true,
+        "y": " 20.079723",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.087794"
+    },
+    "Dworzec G\u0142\u00f3wny Zach\u00f3d": {
+        "przystanek": true,
+        "y": " 19.945321",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.068628"
+    },
+    "Park Jordana": {
+        "przystanek": true,
+        "y": " 19.917815",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.060315"
+    },
+    "TAURON Arena Krak\u00f3w Al. Pokoju": {
+        "przystanek": true,
+        "y": " 19.989669",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.064288"
+    },
+    "Wlotowa": {
+        "przystanek": true,
+        "x": "50.019184",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.988366"
+    },
+    "Plac Wszystkich \u015awi\u0119tych": {
+        "przystanek": true,
+        "y": " 19.937958",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.059116"
+    },
+    "Dworzec P\u0142asz\u00f3w Estakada": {
+        "przystanek": true,
+        "y": " 19.977981",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.034361"
+    },
+    "Os.Piast\u00f3w": {
+        "przystanek": false,
+        "y": " 20.011809",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.102268"
+    },
+    "Grota-Roweckiego": {
+        "przystanek": true,
+        "y": " 19.920626",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.031736"
+    },
+    "Politechnika": {
+        "przystanek": true,
+        "y": " 19.944938",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.070865"
+    },
+    "Batorego": {
+        "przystanek": true,
+        "y": " 19.929095",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.066827"
+    },
+    "Hala Targowa": {
+        "przystanek": true,
+        "y": " 19.948416",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.058599"
+    },
+    "Ma\u0142y P\u0142asz\u00f3w": {
+        "przystanek": false,
+        "y": " 20.001056",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.040107"
+    },
+    "Prokocim Szpital": {
+        "przystanek": true,
+        "y": " 19.999651",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.014376"
+    },
+    "P\u0119dzich\u00f3w": {
+        "przystanek": true,
+        "y": " 19.937693",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069458"
+    },
+    "Dworzec Towarowy": {
+        "przystanek": true,
+        "y": " 19.940162",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.075755"
+    },
+    "Cysters\u00f3w": {
+        "przystanek": true,
+        "y": " 19.970393",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.066536"
+    },
+    "Gromadzka": {
+        "przystanek": true,
+        "y": " 19.978155",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.040632"
+    },
+    "Wiadukty": {
+        "przystanek": true,
+        "y": " 20.056936",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.088519"
+    },
+    "\u0106wikli\u0144skiej": {
+        "przystanek": true,
+        "y": " 20.018955",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.016173"
+    },
+    "Kapelanka": {
+        "przystanek": true,
+        "y": " 19.921943",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.045354"
+    },
+    "Rondo Grzeg\u00f3rzeckie": {
+        "przystanek": true,
+        "y": " 19.958961",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.057639"
+    },
+    "Starowi\u015blna": {
+        "przystanek": true,
+        "y": " 19.945323",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.056549"
+    },
+    "Witosa": {
+        "przystanek": true,
+        "x": "50.012436",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.955484"
+    },
+    "Je\u017cynowa": {
+        "przystanek": true,
+        "y": " 20.084861",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.064889"
+    },
+    "Kombinat": {
+        "przystanek": true,
+        "x": "50.079262",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 20.065637"
+    },
+    "Rondo 308. Dywizjonu": {
+        "przystanek": true,
+        "y": " 20.005107",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.067343"
+    },
+    "Stary Kleparz": {
+        "przystanek": true,
+        "y": " 19.939055",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.066266"
+    },
+    "Rzebika": {
+        "przystanek": true,
+        "y": " 19.991639",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.040502"
+    },
+    "Francesco Nullo": {
+        "przystanek": true,
+        "x": "50.060122",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.967276"
+    },
+    "Stradom": {
+        "przystanek": true,
+        "y": " 19.941635",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.051749"
+    },
+    "Mi\u015bnie\u0144ska": {
+        "przystanek": true,
+        "y": " 19.999954",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.094484"
+    },
+    "Solvay": {
+        "przystanek": true,
+        "y": " 19.929565",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.016236"
+    },
+    "Miodowa": {
+        "przystanek": true,
+        "y": " 19.948402",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.053635"
+    },
+    "Rondo Hipokratesa": {
+        "przystanek": true,
+        "y": " 20.021428",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.090121"
+    },
+    "G\u0142owackiego": {
+        "przystanek": true,
+        "y": " 19.905445",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.076044"
+    },
+    "Powsta\u0144c\u00f3w Wielkopolskich": {
+        "przystanek": true,
+        "y": " 19.960980",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.042112"
+    },
+    "Zajezdnia Nowa Huta": {
+        "przystanek": true,
+        "y": " 20.065574",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.083132"
+    },
+    "Smolki": {
+        "przystanek": true,
+        "y": " 19.943163",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.041546"
+    },
+    "Kleeberga": {
+        "przystanek": true,
+        "y": " 20.012685",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.095607"
+    },
+    "Borsucza": {
+        "przystanek": true,
+        "y": " 19.929065",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.030506"
+    },
+    "Skrzy\u017cowanie Grota": {
+        "przystanek": false,
+        "y": "19.926248",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": true,
+        "x": "50.030759",
+        "between": ["Lipi\u0144skiego", "Borsucza", "Kobierzy\u0144ska"]
+    },
+    "Ruczaj": {
+        "przystanek": true,
+        "y": " 19.905748",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.027189"
+    },
+    "Os.Z\u0142otego Wieku": {
+        "przystanek": true,
+        "y": " 20.004830",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.093634"
+    },
+    "Salwator": {
+        "przystanek": true,
+        "y": " 19.914849",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.052744"
+    },
+    "Dworcowa": {
+        "przystanek": true,
+        "y": " 19.970588",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.033117"
+    },
+    "\u015aw.Wawrzy\u0144ca": {
+        "przystanek": true,
+        "y": " 19.951053",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.051159"
+    },
+    "Cichy K\u0105cik": {
+        "przystanek": false,
+        "y": " 19.903349",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.062731"
+    },
+    "Bia\u0142ucha": {
+        "przystanek": true,
+        "y": " 19.977556",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.067707"
+    },
+    "\u0141agiewniki": {
+        "przystanek": true,
+        "y": " 19.936224",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.029670"
+    },
+    "Rondo Piastowskie": {
+        "przystanek": true,
+        "y": " 20.011343",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.094379"
+    },
+    "Rondo Mogilskie": {
+        "przystanek": true,
+        "y": " 19.959375",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.065972"
+    },
+    "Meksyk": {
+        "przystanek": true,
+        "y": " 20.094601",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069822"
+    },
+    "Uniwersytet Pedagogiczny": {
+        "przystanek": true,
+        "y": " 19.910376",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": " 50.074204"
+    },
+    "Chmieleniec": {
+        "przystanek": true,
+        "y": " 19.897889",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.020665"
+    },
+    "Cmentarz Podg\u00f3rski": {
+        "przystanek": true,
+        "y": " 19.963991",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.039373"
+    },
+    "Rondo Kocmyrzowskie im. Ks. Gorzelanego": {
+        "przystanek": true,
+        "y": " 20.027343",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.079617"
+    },
+    "Kurdwan\u00f3w": {
+        "przystanek": false,
+        "y": " 19.948588",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.013306"
+    },
+    "Plac Centralny im. R.Reagana": {
+        "przystanek": true,
+        "y": " 20.037283",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.072068"
+    },
+    "Jarz\u0119biny": {
+        "przystanek": true,
+        "x": "50.092237",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 20.061327"
+    },
+    "Limanowskiego": {
+        "przystanek": true,
+        "y": " 19.955442",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.045117"
+    },
+    "TAURON Arena Krak\u00f3w Wieczysta": {
+        "przystanek": true,
+        "y": " 19.983275",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.071345"
+    },
+    "Nowy Kleparz": {
+        "przystanek": true,
+        "y": " 19.936360",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073483"
+    },
+    "D\u0105bie": {
+        "przystanek": true,
+        "y": " 19.979332",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.060843"
+    },
+    "Centrum Kongresowe ICE": {
+        "przystanek": true,
+        "y": " 19.931053",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.048584"
+    },
+    "Lipska": {
+        "przystanek": true,
+        "y": " 19.983071",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.040642"
+    },
+    "Kampus UJ": {
+        "przystanek": true,
+        "y": " 19.901657",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.024337"
+    },
+    "Lipi\u0144skiego": {
+        "przystanek": true,
+        "y": " 19.924984",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.030756"
+    },
+    "Plac Bohater\u00f3w Getta": {
+        "przystanek": true,
+        "y": " 19.954966",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.046761"
+    },
+    "Ofiar D\u0105bia": {
+        "przystanek": true,
+        "y": " 19.976280",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.059605"
+    },
+    "Teatr Vari\u00e9t\u00e9": {
+        "przystanek": true,
+        "y": " 19.962406",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.058830"
+    },
+    "Orzeszkowej": {
+        "przystanek": true,
+        "y": " 19.938470",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.050567"
+    },
+    "Korona": {
+        "przystanek": true,
+        "y": " 19.947039",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.043814"
+    },
+    "Czy\u017cyny": {
+        "przystanek": true,
+        "y": " 20.011976",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073965"
+    },
+    "M1 Al. Pokoju": {
+        "przystanek": true,
+        "y": " 19.996884",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.065559"
+    },
+    "Borek Fa\u0142\u0119cki": {
+        "przystanek": false,
+        "y": " 19.926947",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.012775"
+    },
+    "Bratys\u0142awska": {
+        "przystanek": true,
+        "y": " 19.933827",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.084248"
+    },
+    "Klasztorna": {
+        "przystanek": true,
+        "y": " 20.052578",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.068538"
+    },
+    "Struga": {
+        "przystanek": true,
+        "y": " 20.042946",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073659"
+    },
+    "Nowy Prokocim": {
+        "przystanek": true,
+        "y": " 20.012797",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.016221"
+    },
+    "Jubilat": {
+        "przystanek": true,
+        "y": " 19.927488",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.055169"
+    },
+    "Plac Inwalid\u00f3w": {
+        "przystanek": true,
+        "y": " 19.926437",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069096"
+    },
+    "Klimeckiego": {
+        "przystanek": true,
+        "y": " 19.967561",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.049010"
+    },
+    "Mrozowa": {
+        "przystanek": true,
+        "y": " 20.071703",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.084080"
+    },
+    "Krowodrza G\u00f3rka": {
+        "przystanek": false,
+        "y": " 19.931201",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.088926"
+    },
+    "Koksochemia": {
+        "przystanek": true,
+        "y": " 20.104515",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.071908"
+    },
+    "Filharmonia": {
+        "przystanek": true,
+        "y": " 19.933268",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.058999"
+    },
+    "Rakowicka": {
+        "przystanek": true,
+        "x": "50.071299",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.954874"
+    },
+    "Balicka Wiadukt": {
+        "przystanek": true,
+        "y": " 19.890407",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.081158"
+    },
+    "Blokowa": {
+        "przystanek": true,
+        "y": " 20.074393",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.085314"
+    },
+    "Walcownia": {
+        "przystanek": false,
+        "y": " 20.084663",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.090805"
+    },
+    "\u015aw.Gertrudy": {
+        "przystanek": true,
+        "y": " 19.941156",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.058910"
+    },
+    "Dworzec G\u0142\u00f3wny Tunel": {
+        "przystanek": true,
+        "y": " 19.946360",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.068807"
+    },
+    "Centralna": {
+        "przystanek": true,
+        "y": " 20.012625",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.069369"
+    },
+    "Bronowice Ma\u0142e": {
+        "przystanek": false,
+        "y": " 19.881340",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.081782"
+    },
+    "Bronowice": {
+        "przystanek": true,
+        "y": " 19.901304",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.077622"
+    },
+    "Skrzy\u017cowanie Gertrudy": {
+        "przystanek": false,
+        "y": "19.941169",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": true,
+        "x": "50.058900",
+        "between": ["Plac Wszystkich \u015awi\u0119tych", "\u015aw.Gertrudy", "Poczta G\u0142\u00f3wna", "Wawel"]
+    },
+    "Rzemie\u015blnicza": {
+        "przystanek": true,
+        "y": " 19.938549",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.033259"
+    },
+    "Skrzy\u017cowanie UJ": {
+        "przystanek": false,
+        "y": "19.932371",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": true,
+        "x": "50.060504",
+        "between": ["Uniwersytet Jagiello\u0144ski", "Filharmonia", "Teatr Bagatela"]
+    },
+    "Poczta G\u0142\u00f3wna": {
+        "przystanek": true,
+        "x": "50.059512",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.942140"
+    },
+    "Prokocim": {
+        "przystanek": true,
+        "y": " 19.991241",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.017923"
+    },
+    "DH Wanda": {
+        "przystanek": true,
+        "y": " 20.020689",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.084457"
+    },
+    "Cracovia": {
+        "przystanek": true,
+        "y": " 19.924948",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.059415"
+    },
+    "Szwedzka": {
+        "przystanek": true,
+        "y": " 19.925394",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.046734"
+    },
+    "Wesele": {
+        "przystanek": true,
+        "y": " 19.897041",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.079152"
+    },
+    "Bardosa": {
+        "przystanek": true,
+        "y": " 20.064615",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.067722"
+    },
+    "Elektromonta\u017c": {
+        "przystanek": true,
+        "y": " 20.063940",
+        "on_demand": true,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.087704"
+    },
+    "AWF": {
+        "przystanek": true,
+        "y": " 19.996650",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073859"
+    },
+    "Czerwone Maki P+R": {
+        "przystanek": false,
+        "y": " 19.889394",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.018202"
+    },
+    "Plac Wolnica": {
+        "przystanek": true,
+        "y": " 19.943449",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.048089"
+    },
+    "Os.Kolorowe": {
+        "przystanek": true,
+        "y": " 20.029184",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.072280"
+    },
+    "Rondo Czy\u017cy\u0144skie": {
+        "przystanek": true,
+        "y": " 20.017455",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073456"
+    },
+    "Teatr Bagatela": {
+        "przystanek": true,
+        "y": " 19.932931",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.063455"
+    },
+    "Teligi": {
+        "przystanek": true,
+        "y": " 20.007563",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.016548"
+    },
+    "Borek Fa\u0142\u0119cki I": {
+        "przystanek": true,
+        "y": " 19.928098",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.014518"
+    },
+    "Zab\u0142ocie": {
+        "przystanek": true,
+        "y": " 19.965185",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.049715"
+    },
+    "Mistrzejowice": {
+        "przystanek": false,
+        "y": " 19.995738",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.095027"
+    },
+    "Teatr Ludowy": {
+        "przystanek": true,
+        "y": " 20.032450",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.082061"
+    },
+    "Kabel": {
+        "przystanek": true,
+        "x": "50.026847",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "y": " 19.976980"
+    },
+    "Rondo Matecznego": {
+        "przystanek": true,
+        "y": " 19.940624",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.036344"
+    },
+    "Dauna": {
+        "przystanek": true,
+        "y": " 19.977567",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.018394"
+    },
+    "Skrzy\u017cowanie Dworcowa": {
+        "przystanek": false,
+        "y": "19.972469",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": true,
+        "x": "50.031311",
+        "between": ["Dworcowa", "Dworzec P\u0142asz\u00f3w Estakada", "Kabel"]
+    },
+    "Muzeum Lotnictwa": {
+        "przystanek": true,
+        "y": " 19.990540",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.073523"
+    },
+    "Wawel": {
+        "przystanek": true,
+        "y": " 19.939210",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.054212"
+    },
+    "Oleandry": {
+        "przystanek": true,
+        "y": " 19.920717",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.059844"
+    },
+    "Norymberska": {
+        "przystanek": true,
+        "y": " 19.912740",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.029927"
+    },
+    "Kukli\u0144skiego": {
+        "przystanek": true,
+        "y": " 19.973513",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.044652"
+    },
+    "Skrzy\u017cowanie Polibuda": {
+        "przystanek": false,
+        "y": "19.944717",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": true,
+        "x": "50.073925",
+        "between": ["Politechnika", "Dworzec Towarowy", "Dworzec G\u0142\u00f3wny Tunel"]
+    },
+    "Darwina": {
+        "przystanek": true,
+        "y": " 20.059280",
+        "on_demand": false,
+        "petla": false,
+        "skrzyzowanie": false,
+        "x": "50.090945"
+    },
+    "Cmentarz Rakowicki": {
+        "przystanek": false,
+        "y": " 19.957305",
+        "on_demand": false,
+        "petla": true,
+        "skrzyzowanie": false,
+        "x": "50.074096"
+    }
+}

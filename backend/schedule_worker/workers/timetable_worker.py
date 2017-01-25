@@ -42,9 +42,10 @@ class TimetableWorker(YieldPeriodicCallback):
     @coroutine
     def get_new_db(self, res):
         self.update_status('fetching new db version')
-        if self.force_update or\
-           self.last_db_update is None or\
-           datetime.datetime.now() - self.last_db_update > datetime.timedelta(hours=23):
+        if (self.force_update or
+           self.last_db_update is None or
+           datetime.datetime.now() - self.last_db_update > datetime.timedelta(hours=23)) and \
+           self.config['refresh_przystanki_db']:
             self.force_update = False
             self.last_db_update = datetime.datetime.now()
             zwrotka = json.loads(res.body.decode('utf-8'))
@@ -77,6 +78,9 @@ class TimetableWorker(YieldPeriodicCallback):
 
     @coroutine
     def fill_przystanki_db(self, lines):
+        if self.config['refresh_przystanki_db'] is False:
+            logging.info('przystanki.db untouched due to config')
+            return
         self.update_status('filling przystanki db cache')
         self.przystanki_db.clear_table()
         for line in lines:

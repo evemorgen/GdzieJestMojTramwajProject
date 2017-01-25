@@ -36,3 +36,11 @@ class PrzystankiDb():
         query = "delete from przystanki"
         self.cursor.execute(query)
         self.db_connection.commit()
+
+    def get_terminal_time(self, line, terminal):
+        query = "select pointTime from przystanki where lineName = {} and pointName = '{}' and route like '{}%'".format(line, terminal, terminal)
+        self.cursor.execute(query)
+        time = self.cursor.fetchall()
+        ret = []
+        if len(time) == 1 or len(time) == 2:
+            return time[0][0]
