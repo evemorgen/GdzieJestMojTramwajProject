@@ -10,7 +10,6 @@ from db import RealDb
 class RealDataHandler(RequestHandler):
 
     def initialize(self):
-        logging.info('heja')
         self.db = RealDb()
         self.db.get_all()
 
@@ -22,3 +21,15 @@ class RealDataHandler(RequestHandler):
     @coroutine
     def post(self):
         params = json.loads(self.request.body.decode('utf-8'))
+        logging.info('putting new point (%s, %s) to line %s', params['lat'], params['lon'], params['line'])
+        self.db.insert_point(params['id'], params['lat'], params['lon'], params['line'], params['ts'])
+
+    @coroutine
+    def get(self):
+        mes_id = self.get_argument('id')
+        lat = self.get_argument('lat')
+        lon = self.get_argument('lon')
+        line = self.get_argument('line')
+        timestamp = self.get_argument('ts')
+        logging.info('putting new point (%s, %s) to line %s', lat, lon, line)
+        self.db.insert_point(mes_id, lat, lon, line, timestamp)

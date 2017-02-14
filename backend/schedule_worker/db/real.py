@@ -15,3 +15,8 @@ class RealDb():
         self.cursor.execute(query)
         data = self.cursor.fetchall()
         logging.info(data)
+
+    def insert_point(self, mes_id, lat, lon, line, ts):
+        query = "insert into real_data values (%s, %s, %s, %s, %s)" % (mes_id, line, lat, lon, ts)
+        self.cursor.execute(query)
+        self.db_connection.commit()
