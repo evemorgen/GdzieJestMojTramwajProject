@@ -7,14 +7,15 @@ from tornado.ioloop import IOLoop
 
 from utils import Config, logging_config
 from workers import TimetableWorker, SpawnWorker, UpdateWorker, DelayFactorWorker
-from handlers import HealthCheck, TTworker, GraphHandler
+from handlers import HealthCheck, TTworker, GraphHandler, RealDataHandler
 
 
 def make_app():
     return Application([
         (r'/healthcheck', HealthCheck),
         (r'/mpk_db/(.*)', TTworker, {'tt_worker': tt_worker}),
-        (r'/graph_api/(.*)', GraphHandler, {'spawn_worker': spawn_worker})
+        (r'/graph_api/(.*)', GraphHandler, {'spawn_worker': spawn_worker}),
+        (r'/real_data', RealDataHandler)
     ])
 
 if __name__ == "__main__":
