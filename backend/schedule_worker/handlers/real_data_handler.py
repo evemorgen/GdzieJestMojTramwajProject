@@ -23,6 +23,7 @@ class RealDataHandler(RequestHandler):
         params = json.loads(self.request.body.decode('utf-8'))
         logging.info('putting new point (%s, %s) to line %s', params['lat'], params['lon'], params['line'])
         self.db.insert_point(params['id'], params['lat'], params['lon'], params['line'], params['ts'])
+        self.write("OK")
 
     @coroutine
     def get(self):
@@ -33,3 +34,4 @@ class RealDataHandler(RequestHandler):
         timestamp = self.get_argument('ts')
         logging.info('putting new point (%s, %s) to line %s', lat, lon, line)
         self.db.insert_point(mes_id, lat, lon, line, timestamp)
+        self.write("OK")
