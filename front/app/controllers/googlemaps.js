@@ -23,7 +23,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
     $scope.getStops = function(endpoint, iconUrl) {
         $http({
             //url: $rootScope.config.url + '/graph_api/get_all_stops',
-            url: 'http://0.0.0.0:8888/graph_api/' + endpoint,
+            url: 'http://ec2-54-229-213-170.eu-west-1.compute.amazonaws.com:1911/graph_api/' + endpoint,
             method: 'post',
         }).then(function(response){
             var stops = response.data.data;
@@ -53,7 +53,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
 
     $scope.showEdges = function(line){
         $http.post(
-            'http://0.0.0.0:8888/graph_api/get_graph_edges',
+            'http://ec2-54-229-213-170.eu-west-1.compute.amazonaws.com:1911/graph_api/get_graph_edges',
             {'line': line}
         ).then(function(response){
             var edges = response.data.data;
@@ -77,7 +77,7 @@ app.controller('mapMagic2', function($scope, $rootScope, $http, md5, $interval, 
     };
     $scope.getTrams = function(line){
         $http.post(
-            'http://0.0.0.0:8888/graph_api/get_trams',
+            'http://ec2-54-229-213-170.eu-west-1.compute.amazonaws.com:1911/graph_api/get_trams',
             {'line': line}
         ).then(function(response){
             var trams = response.data.data;

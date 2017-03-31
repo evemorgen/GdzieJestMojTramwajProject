@@ -1,3 +1,4 @@
 {
-    "url": "http://0.0.0.0:8888"
+    //"url": "http://34.252.221.79:1911"
+    "url": "http://ec2-54-229-213-170.eu-west-1.compute.amazonaws.com:1911"
 }
